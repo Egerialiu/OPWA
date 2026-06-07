@@ -1,0 +1,45 @@
+# OPWA A1 Training Configuration
+# See TrainingConfig and WeatherDatasetConfig for all options.
+
+# ── Data ──
+weather_synthetic: /path/to/WeatherSynthetic
+foggy_cityscapes: /path/to/FoggyCityscapes
+acdc_root: /path/to/ACDC
+carla_root: /path/to/CARLA
+batch_size: 4
+image_size: 512
+
+# ── Model ──
+pretrained_model: "stabilityai/sd-turbo"
+perception_model: "nvidia/segformer-b0-finetuned-cityscapes-1024-1024"
+prompt: "a photo of a street scene, clear weather, high quality"
+
+# ── Training ──
+stage1_steps: 1000
+stage2_steps: 1000
+learning_rate: 1.0e-4
+lora_lr: 1.0e-4
+gate_lr: 1.0e-3
+weight_decay: 1.0e-5
+
+# ── Losses ──
+l2_weight: 1.0
+lpips_weight: 1.0
+percept_weight_max: 0.5
+gate_reg_weight: 1.0e-3
+
+# ── Perception Warmup ──
+warmup_start: 500
+warmup_end: 1500
+
+# ── Checkpointing ──
+output_dir: "./outputs/opwa_a1"
+checkpoint_dir: "./checkpoints"
+save_interval: 500
+max_checkpoints: 5
+
+# ── System ──
+device: "cuda"
+mixed_precision: "fp16"
+log_interval: 20
+eval_interval: 200

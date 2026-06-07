@@ -1,0 +1,29 @@
+# Large data files (1.4GB training data)
+night/
+
+# Claude Code — keep memory and history, exclude secrets
+.claude/*.local.json
+.claude/transcripts/
+
+# Python build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Checkpoints / outputs (generated during training)
+checkpoints/
+outputs/
+runs/
