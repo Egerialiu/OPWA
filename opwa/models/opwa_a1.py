@@ -7,7 +7,8 @@ Architecture:
        → VAE Decoder (frozen, in graph):
            Each up_block receives: sample += trunk + branch
              trunk = skip_conv(encoder_skip_act_rev) × γ (γ=1)
-             branch = proj(D-Enc_feat) × σ(gate)
+             branch = proj(branch_feats) × σ(gate)
+               branch_feats = D-Enc(I_deg) or DCP(I_deg) or noise
        → I_rec (reconstructed)
 
 Loss = L2 + LPIPS×5 in pixel space
@@ -26,6 +27,7 @@ from .degradation_encoder import DegradationEncoder
 from .gate import StaticGate
 from .weather_encoder import WeatherEncoder
 from .conditional_gate import ConditionalGate
+from .physics_branch import DCPBranch
 from .lora import add_lora_to_unet, add_lora_to_vae
 from diffusers import LCMScheduler
 
@@ -82,6 +84,7 @@ class OPWA_A1(nn.Module):
         train_d_enc: bool = False,
         use_conditional_gate: bool = False,
         weather_embed_dim: int = 32,
+        branch_type: str = "d_enc",  # "d_enc" | "dcp" | "noise"
     ):
         super().__init__()
         self.unet = unet
@@ -92,6 +95,7 @@ class OPWA_A1(nn.Module):
         self.noise_probe = noise_probe
         self.train_d_enc = train_d_enc
         self.use_conditional_gate = use_conditional_gate
+        self.branch_type = branch_type  # "d_enc" | "dcp" | "noise"
         self.gate_clamp_max = None  # set via set_gate_clamp()
 
         # VAE is frozen but forward is IN the gradient graph
@@ -111,6 +115,11 @@ class OPWA_A1(nn.Module):
             embed_dim=256,
             dropout=0.0,  # overridden by set_d_enc_dropout()
         )
+
+        # DCP branch for physics-guided fog restoration
+        self.dcp_branch: Optional[DCPBranch] = None
+        if branch_type == "dcp":
+            self.dcp_branch = DCPBranch(feat_channels=d_enc_channels)
 
         self.projections = nn.ModuleList([
             BranchProjection(d_enc_channels[i], skip_channels[i])
@@ -236,8 +245,8 @@ class OPWA_A1(nn.Module):
         self._hooks_registered = True
 
     def _compute_branch(self, degraded_image: torch.Tensor) -> List[torch.Tensor]:
-        """Compute branch features: D-Enc or random noise."""
-        if self.noise_probe:
+        """Compute branch features: D-Enc, DCP, or random noise."""
+        if self.noise_probe or self.branch_type == "noise":
             B, _, H, W = degraded_image.shape
             device = degraded_image.device
             feats = []
@@ -246,6 +255,9 @@ class OPWA_A1(nn.Module):
                 w = W // (2 ** (i + 1))
                 feats.append(torch.randn(B, dc, h, w, device=device))
             return feats
+        elif self.branch_type == "dcp" and self.dcp_branch is not None:
+            branch_feats, _ = self.dcp_branch(degraded_image)
+            return branch_feats
         else:
             branch_feats, _ = self.degradation_encoder(degraded_image)
             return branch_feats
@@ -397,13 +409,20 @@ class OPWA_A1(nn.Module):
                     params.append(p)
 
         # D-Enc (conditional)
-        if self.train_d_enc:
+        if self.train_d_enc and self.branch_type != "dcp":
             for p in self.degradation_encoder.parameters():
                 p.requires_grad = True
                 params.append(p)
         else:
             for p in self.degradation_encoder.parameters():
                 p.requires_grad = False
+
+        # DCP branch (trainable when active)
+        if self.branch_type == "dcp" and self.dcp_branch is not None:
+            for p in self.dcp_branch.parameters():
+                p.requires_grad = True
+                params.append(p)
+
         return params
 
     def get_total_params(self) -> Dict[str, int]:

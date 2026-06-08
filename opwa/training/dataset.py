@@ -29,6 +29,7 @@ class WeatherDatasetConfig:
     """Configuration for weather dataset construction."""
 
     weather_synthetic_root: Optional[str] = None  # Pix2Pix format root (train_A/train_B)
+    weather_subset: Optional[str] = None          # e.g. "fog" → loads {root}/{subset}/{split}_A/
     foggy_cityscapes_root: Optional[str] = None
     acdc_root: Optional[str] = None
 
@@ -78,10 +79,15 @@ class WeatherDataset(Dataset):
               f"{' (with pseudo-labels)' if self.pseudo_labels is not None else ''}")
 
     def _load_pix2pix(self):
-        """Load Pix2Pix-format data: {root}/{split}_A/ (deg) + {root}/{split}_B/ (clean)."""
+        """Load Pix2Pix-format data: {root}/{split}_A/ (deg) + {root}/{split}_B/ (clean).
+
+        If weather_subset is set, loads from {root}/{subset}/{split}_A/ and _B/ instead."""
         root = self.config.weather_synthetic_root
         if root is None or not os.path.isdir(root):
             return
+
+        if self.config.weather_subset:
+            root = os.path.join(root, self.config.weather_subset)
 
         deg_dir = os.path.join(root, f"{self.split}_A")
         clean_dir = os.path.join(root, f"{self.split}_B")
