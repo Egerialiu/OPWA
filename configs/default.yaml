@@ -43,3 +43,8 @@ device: "cuda"
 mixed_precision: "fp16"
 log_interval: 20
 eval_interval: 200
+
+# ── A2 Conditional Gate ──
+use_conditional_gate: true
+weather_encoder_lr: 1.0e-4
+conditional_gate_lr: 5.0e-4

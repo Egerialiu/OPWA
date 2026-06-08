@@ -56,15 +56,23 @@ def parse_args():
     parser.add_argument("--stage1_steps", type=int, default=1000)
     parser.add_argument("--stage2_steps", type=int, default=1000)
     parser.add_argument("--learning_rate", type=float, default=1e-4)
-    parser.add_argument("--lora_lr", type=float, default=1e-4)
-    parser.add_argument("--gate_lr", type=float, default=1e-3)
-    parser.add_argument("--forward_mode", type=str, default='dual',
-                        choices=['direct', 'denoise', 'dual'])
-    parser.add_argument("--lpips_weight", type=float, default=1.0)
+    parser.add_argument("--lora_rank", type=int, default=8,
+                        help="UNet LoRA rank")
+    parser.add_argument("--vae_lora_rank", type=int, default=4,
+                        help="VAE Decoder LoRA rank (0=disable)")
+    parser.add_argument("--lora_lr", type=float, default=5e-6)
+    parser.add_argument("--gate_lr", type=float, default=5e-4)
+    parser.add_argument("--lpips_weight", type=float, default=5.0)
+    parser.add_argument("--gan_weight", type=float, default=0.5,
+                        help="GAN adversarial loss weight (0=disable)")
     parser.add_argument("--percept_weight_max", type=float, default=0.5)
     parser.add_argument("--warmup_start", type=int, default=500)
     parser.add_argument("--warmup_end", type=int, default=1500)
     parser.add_argument("--gate_reg_weight", type=float, default=1e-3)
+    parser.add_argument("--d_enc_weight_decay", type=float, default=1e-4,
+                        help="Weight decay for D-Enc params (v6g/h/i: 1e-4)")
+    parser.add_argument("--gate_init", type=float, nargs=4, default=[-2.0, -2.0, -2.0, -2.0],
+                        help="Gate bias init values (pre-sigmoid), default -2.0≈0.12")
 
     # Device
     parser.add_argument("--device", type=str,
@@ -73,6 +81,26 @@ def parse_args():
 
     # HF cache
     parser.add_argument("--hf_cache", type=str, default="/gz-data/huggingface_cache")
+
+    # Noise probe (v6a)
+    parser.add_argument("--noise_probe", action="store_true",
+                        help="Replace D-Enc features with random noise")
+    parser.add_argument("--train_d_enc", action="store_true",
+                        help="Unfreeze D-Enc and train jointly")
+
+    # Regularization (v6g/h/i)
+    parser.add_argument("--d_enc_dropout", type=float, default=0.0,
+                        help="Dropout2d prob for D-Enc features (v6g)")
+    parser.add_argument("--gate_clamp_max", type=float, default=None,
+                        help="Max gate value to clamp (e.g. 0.5 for v6h)")
+
+    # A2 Conditional Gate
+    parser.add_argument("--use_conditional_gate", action="store_true",
+                        help="Enable conditional gate with WeatherEncoder (A2)")
+    parser.add_argument("--weather_encoder_lr", type=float, default=1e-4,
+                        help="Learning rate for WeatherEncoder")
+    parser.add_argument("--conditional_gate_lr", type=float, default=5e-4,
+                        help="Learning rate for ConditionalGate MLP")
 
     # Resume
     parser.add_argument("--resume", type=str, default=None)
@@ -142,8 +170,20 @@ def main():
     )
     logger.info(f"UNet: {sum(p.numel() for p in unet.parameters()):,} params")
 
-    # ── Build OPWA A1 ──
-    model = OPWA_A1(unet=unet, vae=vae, scheduler=scheduler, gate_init=[0.2, 0.0, -0.12, -0.2])
+    # ── Build OPWA A1/A2 ──
+    model = OPWA_A1(unet=unet, vae=vae, scheduler=scheduler, gate_init=args.gate_init,
+                     noise_probe=args.noise_probe,
+                     lora_rank=args.lora_rank,
+                     vae_lora_rank=args.vae_lora_rank,
+                     train_d_enc=args.train_d_enc,
+                     use_conditional_gate=args.use_conditional_gate)
+    # Apply regularization
+    if args.d_enc_dropout > 0:
+        model.set_d_enc_dropout(args.d_enc_dropout)
+        logger.info(f"  D-Enc Dropout2d(p={args.d_enc_dropout}) applied")
+    if args.gate_clamp_max is not None:
+        model.set_gate_clamp(args.gate_clamp_max)
+        logger.info(f"  Gate clamp max={args.gate_clamp_max} applied")
     model.to(device)
     info = model.get_total_params()
     logger.info(f"OPWA A1: {info['total']:,} total, {info['trainable']:,} trainable")
@@ -179,16 +219,22 @@ def main():
         lora_lr=args.lora_lr,
         gate_lr=args.gate_lr,
         lpips_weight=args.lpips_weight,
+        gan_weight=args.gan_weight,
         percept_weight_max=args.percept_weight_max,
         warmup_start=args.warmup_start,
         warmup_end=args.warmup_end,
         gate_reg_weight=args.gate_reg_weight,
+        d_enc_weight_decay=args.d_enc_weight_decay,
         stage1_steps=args.stage1_steps,
         stage2_steps=args.stage2_steps,
+        total_steps=args.stage1_steps + args.stage2_steps,
         device=str(device),
         mixed_precision=args.mixed_precision,
         prompt=args.prompt,
-        forward_mode=args.forward_mode,
+        use_conditional_gate=args.use_conditional_gate,
+        weather_encoder_lr=args.weather_encoder_lr,
+        conditional_gate_lr=args.conditional_gate_lr,
+        gate_clamp_max=args.gate_clamp_max,
     )
 
     trainer = OPWATrainer(

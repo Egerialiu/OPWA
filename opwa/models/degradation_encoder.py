@@ -37,10 +37,12 @@ class DegradationEncoder(nn.Module):
         base_channels: int = 64,
         num_scales: int = 4,
         embed_dim: int = 256,
+        dropout: float = 0.0,
     ):
         super().__init__()
         self.num_scales = num_scales
         self.embed_dim = embed_dim
+        self.dropout = dropout
 
         # Stem: stride=2 to match GPPI
         self.stem = nn.Sequential(
@@ -48,9 +50,11 @@ class DegradationEncoder(nn.Module):
             nn.GroupNorm(min(8, base_channels), base_channels),
             nn.SiLU(inplace=True),
         )
+        self.stem_drop = nn.Dropout2d(p=dropout)
 
         # Downsampling blocks
         self.down_blocks = nn.ModuleList()
+        self.down_drops = nn.ModuleList()
         in_ch = base_channels
         for i in range(num_scales - 1):
             out_ch = base_channels * (2 ** (i + 1))
@@ -61,6 +65,7 @@ class DegradationEncoder(nn.Module):
                     nn.SiLU(inplace=True),
                 )
             )
+            self.down_drops.append(nn.Dropout2d(p=dropout))
             in_ch = out_ch
 
         # Global embedding MLP (from deepest feature)
@@ -105,11 +110,13 @@ class DegradationEncoder(nn.Module):
         """
         # Stem: stride=2 → spatial /2
         f = self.stem(x)  # (B, 64, 256, 256)
+        f = self.stem_drop(f)
         features = [f]
 
         # Down blocks: each stride=2 → spatial /2 per level
-        for block in self.down_blocks:
+        for block, drop_fn in zip(self.down_blocks, self.down_drops):
             f = block(f)
+            f = drop_fn(f)
             features.append(f)
 
         # Ensure exactly num_scales features

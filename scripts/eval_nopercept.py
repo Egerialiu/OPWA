@@ -1,8 +1,8 @@
 """
-Evaluate A1-no-percept checkpoint on WeatherSynthetic test set.
+Evaluate OPWA A1 checkpoint on WeatherSynthetic test set.
 Reports mIoU per weather type (rain/fog/night) and overall.
 """
-import torch, sys, json
+import torch, sys, json, argparse
 from diffusers import UNet2DConditionModel, AutoencoderKL
 from transformers import AutoTokenizer, CLIPTextModel, SegformerForSemanticSegmentation
 from opwa.models import OPWA_A1
@@ -11,9 +11,27 @@ from opwa.training.dataset import WeatherDatasetConfig, WeatherDataset
 from opwa.utils.weather_classifier import classify_by_tensor
 import torch.nn.functional as F
 
+parser = argparse.ArgumentParser()
+parser.add_argument("--checkpoint", type=str, required=True, help="Path to checkpoint .pt file")
+parser.add_argument("--data_root", type=str, default="/gz-data/weathersynthetic_street_png")
+parser.add_argument("--batch_size", type=int, default=4)
+parser.add_argument("--model_type", type=str, default="opwa_a1")
+parser.add_argument("--lora_rank", type=int, default=8)
+parser.add_argument("--vae_lora_rank", type=int, default=4)
+parser.add_argument("--train_d_enc", action="store_true", help="D-Enc was trainable")
+parser.add_argument("--noise_probe", action="store_true", help="Noise probe mode")
+parser.add_argument("--use_conditional_gate", action="store_true", help="Conditional gate (A2)")
+parser.add_argument("--output_tag", type=str, default=None, help="Tag for output JSON")
+args = parser.parse_args()
+
 device = torch.device("cuda:0")
-DATA = "/gz-data/weathersynthetic_street_png"
-CKPT = "/gz-data/checkpoints/opwa_a1_nopercept/opwa_a1_step_2000.pt"
+DATA = args.data_root
+CKPT = args.checkpoint
+LORA_RANK = args.lora_rank
+VAE_LORA_RANK = args.vae_lora_rank
+TRAIN_D_ENC = args.train_d_enc
+NOISE_PROBE = args.noise_probe
+USE_CONDITIONAL_GATE = args.use_conditional_gate
 
 # ── Load backbone ──
 print("Loading backbone...")
@@ -33,12 +51,18 @@ with torch.no_grad():
 
 # ── Load model ──
 print("Loading OPWA A1 checkpoint...")
-model = OPWA_A1(unet, vae).to(device)
+model = OPWA_A1(unet, vae, lora_rank=LORA_RANK, vae_lora_rank=VAE_LORA_RANK,
+                 train_d_enc=TRAIN_D_ENC, noise_probe=NOISE_PROBE,
+                 use_conditional_gate=USE_CONDITIONAL_GATE).to(device)
 state = torch.load(CKPT, map_location=device)
-model.load_state_dict(state["model_state_dict"])
+if "trainable_state_dict" in state:
+    model.load_state_dict(state["trainable_state_dict"], strict=False)
+    print(f"Loaded trainable_state_dict (step {state.get('step', '?')})")
+else:
+    model.load_state_dict(state.get("model_state_dict", state), strict=False)
 model.eval()
-gate_vals = [float(v) for v in model.gate.get_gate_values()]
-print(f"Gate values: {gate_vals}")
+gate_vals = [float(v) for v in model.gate.get_gate_values()] if hasattr(model.gate, 'get_gate_values') else []
+print(f"Gate values: {gate_vals}" if gate_vals else "Gate: Conditional (per-sample)")
 
 # ── Perception model ──
 perception = SegformerForSemanticSegmentation.from_pretrained(
@@ -103,10 +127,13 @@ for w in ["rain", "fog", "night"]:
 ar = sum(all_raw) / len(all_raw)
 ao = sum(all_opwa) / len(all_opwa)
 print(f"  {'all':6s}: n={len(all_raw):2d}  raw={ar:.2%}  opwa={ao:.2%}  imprv={ao-ar:+.2%}")
-print(f"\nGate: {gate_vals}")
+if gate_vals:
+    print(f"\nGate: {gate_vals}")
+else:
+    print("\nGate: conditional (per-sample)")
 
 # Save
-out = {"gate": gate_vals, "per_weather": {}, "overall": {}}
+out = {"gate": gate_vals, "conditional_gate": USE_CONDITIONAL_GATE, "per_weather": {}, "overall": {}}
 for w in ["rain", "fog", "night"]:
     out["per_weather"][w] = {"n": len(results[w]["raw"]),
                               "raw_miou": round(sum(results[w]["raw"])/len(results[w]["raw"]), 4) if results[w]["raw"] else None,
@@ -114,5 +141,6 @@ for w in ["rain", "fog", "night"]:
 out["overall"] = {"n": len(all_raw),
                    "raw_miou": round(ar, 4),
                    "opwa_miou": round(ao, 4)}
-json.dump(out, open("/gz-data/checkpoints/opwa_a1_nopercept/eval_results.json", "w"), indent=2)
+output_tag = args.output_tag or os.path.basename(os.path.dirname(CKPT))
+json.dump(out, open(f"/gz-data/checkpoints/{output_tag}/eval_results.json", "w"), indent=2)
 print("\nResults saved to eval_results.json")

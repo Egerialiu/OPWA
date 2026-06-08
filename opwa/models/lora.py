@@ -9,7 +9,7 @@ parameters need to be trained.
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from diffusers import UNet2DConditionModel
+from diffusers import UNet2DConditionModel, AutoencoderKL
 from typing import Dict, List, Optional, Tuple
 
 
@@ -287,3 +287,54 @@ class LoRAWrapper(nn.Module):
         """Remove LoRA and return base UNet."""
         self.merge_lora_weights()
         return self.unet
+
+
+def add_lora_to_vae(
+    vae: AutoencoderKL,
+    rank: int = 4,
+    alpha: float = 1.0,
+) -> AutoencoderKL:
+    """
+    Inject LoRA into ALL VAE Decoder Conv2d layers (resnets, upsamplers, mid, conv_in, conv_out).
+
+    Uses the same hook pattern as add_lora_to_unet.
+    """
+    scaling = alpha / rank
+    hooks = []
+
+    targeted = 0
+    for name, module in vae.decoder.named_modules():
+        if not isinstance(module, nn.Conv2d):
+            continue
+        # Skip groupnorm (not Conv2d) — already filtered by isinstance
+        in_c, out_c = module.in_channels, module.out_channels
+        ks = module.kernel_size
+        safe_name = name.replace(".", "_")
+
+        lora_down = nn.Parameter(torch.zeros(rank, in_c, 1, 1))
+        lora_up = nn.Parameter(torch.zeros(out_c, rank, 1, 1))
+        nn.init.kaiming_uniform_(lora_down, a=0.01)
+        # lora_up zero-init => LoRA starts as no-op
+
+        vae.register_parameter(f"vae_lora_down_{safe_name}", lora_down)
+        vae.register_parameter(f"vae_lora_up_{safe_name}", lora_up)
+
+        def make_hook(down: nn.Parameter, up: nn.Parameter, s: float):
+            def hook(_module, _input, output):
+                x = _input[0]
+                lora_out = F.conv2d(F.conv2d(x, down), up) * s
+                return output + lora_out
+            return hook
+
+        hook = module.register_forward_hook(make_hook(lora_down, lora_up, scaling))
+        hooks.append(hook)
+        targeted += 1
+
+    # Freeze VAE base, keep LoRA trainable
+    for p in vae.parameters():
+        p.requires_grad = False
+    for name, p in vae.named_parameters():
+        if "vae_lora_down_" in name or "vae_lora_up_" in name:
+            p.requires_grad = True
+
+    return vae
