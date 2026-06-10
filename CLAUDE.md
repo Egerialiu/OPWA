@@ -306,6 +306,7 @@ Step 4：分层覆盖率评估（实验 0 主体）
 项目研究规划文档位于：
 - `/OPWA_v3/research/实验交接文档_v2.md` — 实验 0 的完整交接规格
 - `/OPWA_v3/research/出路B_AAAI27方案.md` — AAAI-27 投稿可行性分析
+- `/OPWA_v3/research/exp1_progress.md` — 实验 1-3 当前进度（exp1-pscp 分支）
 
 ---
 
