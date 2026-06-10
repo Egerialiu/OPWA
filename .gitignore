@@ -5,9 +5,12 @@ Depth-Anything-V2/
 # Output images (regeneratable)
 exp0_outputs/*.png
 exp0_outputs/*.csv
+exp1_outputs/*.png
+exp1_outputs/*.csv
 
 # Logs
 exp0_outputs/*.log
+exp1_outputs/*.log
 
 # Python cache
 __pycache__/

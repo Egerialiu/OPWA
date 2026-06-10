@@ -2,9 +2,9 @@
 
 ## 核心目标
 
-验证"恶劣天气下语义分割的 Conformal Prediction 会产生 Coverage Collapse"这一现象是否存在且显著。若实验 0 的覆盖缺口 < 10pp，停止等待人工决策。
+验证"恶劣天气下语义分割的 Conformal Prediction 会产生 Coverage Collapse"现象，并提出 PS-CP（Physics-Stratified Conformal Prediction）修复方案。用实验 0-3 的结果投稿 AAAI-27。
 
-**这不是提升 mIoU/跑排行榜/复现 OPWA 的项目。所有代码决策只服务于验证 Coverage Collapse。**
+**这不是提升 mIoU/跑排行榜/复现 OPWA 的项目。所有代码决策服务于验证 Coverage Collapse 并提出修复方案。**
 
 ---
 
@@ -12,7 +12,7 @@
 
 - **所有实验代码**写在 `/OPWA_v3/` 目录下
 - 可以 import/复用其他文件夹的代码（如 `/root/OPWA/`），但**不能在其他文件夹下修改任何文件**
-- 输出文件统一放在 `/OPWA_v3/expX_outputs/` 目录下
+- 输出文件统一放在 `/root/opwa_v3/expX_outputs/` 目录下（exp0_outputs/, exp1_outputs/）
 
 ---
 
@@ -306,3 +306,199 @@ Step 4：分层覆盖率评估（实验 0 主体）
 项目研究规划文档位于：
 - `/OPWA_v3/research/实验交接文档_v2.md` — 实验 0 的完整交接规格
 - `/OPWA_v3/research/出路B_AAAI27方案.md` — AAAI-27 投稿可行性分析
+
+---
+
+## 实验 1：PS-CP（Physics-Stratified Conformal Prediction）
+
+### 代码路径
+```
+/root/opwa_v3/
+├── OPWA_v3/exp0/             ← 冻结的 baseline（实验 0）
+│   ├── config.py              [共享] 路径、参数、常量
+│   ├── model_loader.py        [共享] SegFormer + Depth Anything
+│   ├── transmittance.py       [共享] 透射率计算
+│   ├── data_utils.py          [共享] 数据加载
+│   └── gt_utils.py            [共享] GT 加载
+├── OPWA_v3/exp1/             ← 实验 1-3（exp1-pscp 分支，新建）
+│   ├── pscp_calibration.py     PS-CP 分层校准 + 诊断模式
+│   ├── pscp_evaluation.py      PS-CP 测试集评估
+│   ├── baselines.py            WCP + Temperature Scaling CP
+│   ├── run_all.py              完整执行入口
+│   └── visualization.py        对比绘图
+├── exp1_outputs/              ← 实验 1-3 输出目录
+```
+
+### 核心算法：PS-CP 分层校准
+
+校准阶段，对校准集 250 张晴天图逐像素计算 nonconformity score，并根据透射率 $t(x)$ 将像素归入对应 Bin。每层的 $\hat{q}_k$ 独立计算：
+
+```python
+for k in range(N_BINS):
+    scores_k = all_scores_by_bin[k]
+    n_k = len(scores_k)
+    if n_k >= MIN_CALIB_PIXELS_PER_BIN:
+        # 有限样本修正（Vovk 2005）
+        idx = ceil((n_k + 1) * 0.90) / n_k
+        q_hats[k] = np.quantile(scores_k, min(idx, 1.0))
+    else:
+        q_hats[k] = global_q_hat  # fallback
+```
+
+测试阶段，每个像素使用其所在 Bin 的 $\hat{q}_k$ 判断覆盖：
+
+```python
+bin_k = digitize(t_map[i,j], BIN_EDGES) - 1
+covered = (score <= q_hats[bin_k])
+```
+
+### 诊断模式（必做先于实验 1）
+
+```bash
+python OPWA_v3/exp1/pscp_calibration.py --diagnose
+# 输出：exp1_outputs/calib_bin_stats.json
+```
+
+检查校准集各 Bin 的像素分布。若 Bin 0 比例 < 1%，需切换到分位数分层或合并 Bin。
+
+### 输出文件
+```
+exp1_outputs/
+  calib_bin_stats.json          ← 诊断：校准集各 Bin 像素分布
+  calib_per_image_t.json        ← 诊断：每张校准图 t_mean
+  pscp_calibration.json         ← PS-CP 校准结果（各 Bin 的 q_hat）
+  exp1_results.json             ← PS-CP 测试评估结果
+  exp1_coverage_gap_plot.png    ← PS-CP 覆盖率柱状图
+  exp1_comparison_plot.png      ← Standard CP vs PS-CP 对比图
+  exp1_calib_histogram.png      ← 校准集 t 分布直方图
+```
+
+### exp1_results.json 格式
+```json
+{
+  "dataset": "foggy_cityscapes_beta0.02",
+  "method": "pscp",
+  "alpha": 0.1,
+  "q_hats": [0.0, 0.0, 0.0, 0.0, 0.0],
+  "bins": {
+    "bin0_t0.00_0.20": { "coverage_rate": 0.0, "gap": 0.0, ... },
+    "bin1_t0.20_0.40": { "coverage_rate": 0.0, "gap": 0.0, ... },
+    "bin2_t0.40_0.60": { "coverage_rate": 0.0, "gap": 0.0, ... },
+    "bin3_t0.60_0.80": { "coverage_rate": 0.0, "gap": 0.0, ... },
+    "bin4_t0.80_1.00": { "coverage_rate": 0.0, "gap": 0.0, ... }
+  },
+  "overall_test_coverage": 0.0,
+  "max_gap": 0.0,
+  "bin0_gap": 0.0
+}
+```
+
+**预期**：各 Bin 的 coverage_rate 应接近 0.90（不再是标准 CP 的 0.78/0.87/0.90 梯度）。
+
+---
+
+## 实验 2：Baseline 对比
+
+### Baselines
+| 方法 | 实现 | 校准阶段 |
+|:-----|:-----|:---------|
+| Standard CP | exp0 已有结果 | 全局 q_hat（单阈值）|
+| **PS-CP（你的方法）** | `exp1/pscp_calibration.py` + `evaluation.py` | 逐 Bin 独立 q_hat |
+| Weighted CP | `exp1/baselines.py:run_weighted_cp()` | 用 t(x) 的密度比加权（Tibshirani 2019）|
+| Temperature Scaling + CP | `exp1/baselines.py:run_temperature_cp()` | 最优温度 T scalse logits 后再算 q_hat |
+
+### Weighted CP 实现细节
+```python
+# 1. 用直方图估计 p_cal(t) 和 p_test(t)
+edges = linspace(t_min, t_max, 50)
+cal_hist, _ = histogram(cal_t, bins=edges, density=True)
+test_hist, _ = histogram(test_t, bins=edges, density=True)
+
+# 2. 密度比
+density_ratio = test_hist / max(cal_hist, 1e-10)
+
+# 3. 每像素权重
+weights = density_ratio[digitize(t_values, edges)]
+
+# 4. 加权分位数
+q_hat = weighted_quantile(scores, weights, 0.90)
+```
+
+### Temperature Scaling 实现细节
+```python
+# 1. 搜索最优温度 T ∈ [0.1, 10.0]
+# 2. logits_scaled = logits / T
+# 3. probs_scaled = softmax(logits_scaled)
+# 4. 用缩放后的 softmax 计算 nonconformity score
+# 5. 标准 Split CP 确定 q_hat
+```
+
+### 输出文件
+```
+exp1_outputs/
+  exp2_wcp_results.json             ← Weighted CP 结果
+  exp2_temperature_cp_results.json  ← Temperature Scaling + CP 结果
+  exp2_baseline_comparison.png      ← 四方法对比图
+```
+
+---
+
+## 实验 3：消融实验
+
+### β 扫描（Ablation A）
+```python
+beta_values = [1.5, 2.0, 2.5, 3.0, 3.5, 4.0]
+# 每个 β 运行完整的 PS-CP pipeline
+# 输出：exp3_ablation_beta.json + 折线图
+```
+
+### Bin 数量扫描（Ablation B）
+```python
+bin_configs = [2, 4, 5, 10]
+# 创建均匀边界，运行 PS-CP pipeline
+# 输出：exp3_ablation_nbins.json + 折线图
+```
+
+### 输出文件
+```
+exp1_outputs/
+  exp3_ablation_beta.json           ← β 扫描结果
+  exp3_ablation_nbins.json          ← Bin 数扫描结果
+  exp3_ablation_beta.png            ← β vs coverage gap 图
+  exp3_ablation_nbins.png           ← N_bins vs coverage gap 图
+```
+
+---
+
+## 执行顺序（分支 exp1-pscp）
+
+```
+Step 0：诊断校准集 Bin 分布
+  → python OPWA_v3/exp1/run_all.py --step diagnose
+  → 输出 calib_bin_stats.json
+  → 若 bin0_ratio < 0.01，需切换到分位数分层
+
+Step 1：PS-CP 校准 + 测试（实验 1）
+  → python OPWA_v3/exp1/run_all.py --step exp1
+  → 输出 exp1_results.json
+  → 验证：各 Bin gap < 0.05
+
+Step 2：Baseline 对比（实验 2）
+  → python OPWA_v3/exp1/run_all.py --step exp2
+  → 生成对比图 + 各方法 JSON
+
+Step 3：消融实验（实验 3）
+  → python OPWA_v3/exp1/run_all.py --step exp3
+  → 生成 β 和 Bin 数的消融曲线
+
+Step 4：全部重绘
+  → python OPWA_v3/exp1/run_all.py --step all-plots
+
+完整运行：
+  → python OPWA_v3/exp1/run_all.py
+```
+
+## Git 分支策略
+- `main` 分支：实验 0 冻结状态，不再修改
+- `exp1-pscp` 分支：实验 1-3 的开发分支
+- 输出目录 `exp0_outputs/` 和 `exp1_outputs/` 与代码分离，不跟踪 git
