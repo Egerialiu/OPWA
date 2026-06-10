@@ -1,0 +1,18 @@
+# Checkpoints (large files)
+checkpoints/
+Depth-Anything-V2/
+
+# Output images (regeneratable)
+exp0_outputs/*.png
+exp0_outputs/*.csv
+
+# Logs
+exp0_outputs/*.log
+
+# Python cache
+__pycache__/
+*.pyc
+*/*.pyc
+
+# OS
+.DS_Store

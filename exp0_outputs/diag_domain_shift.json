@@ -1,0 +1,10 @@
+{
+  "calibration_set": "cityscapes_clear_val_50",
+  "num_images_per_set": 50,
+  "MMD_clear_vs_FoggyCS": 0.220418,
+  "MMD_clear_vs_ACDC": 0.222271,
+  "MMD_FoggyCS_vs_ACDC": 0.221772,
+  "MMD_ratio_FoggyCS_over_ACDC": 0.9917,
+  "FoggyCS_qtile0_gap": 0.149135,
+  "ACDC_qtile0_gap": 0.0
+}

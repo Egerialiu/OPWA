@@ -1,0 +1,73 @@
+{
+  "dataset": "acdc_fog_val",
+  "calibration_source": "cityscapes_clear_val_250",
+  "alpha": 0.1,
+  "q_hat": 0.513809,
+  "bin_strategy": "quantile",
+  "quantile_edges": [
+    0.0,
+    0.049787,
+    0.060558,
+    0.082649,
+    0.135323,
+    1.01
+  ],
+  "calibration_pixel_count": 449381364,
+  "calibration_coverage": 0.9,
+  "bins": {
+    "qtile0_t0.00_0.0498": {
+      "pixel_count": 0,
+      "covered_count": 0,
+      "coverage_rate": 0.0,
+      "gap": 0.9,
+      "mean_set_size": 0.0,
+      "mean_score": 0.0,
+      "empty_set_count": 0,
+      "empty_set_rate": 0.0
+    },
+    "qtile1_t0.0498_0.0606": {
+      "pixel_count": 78435598,
+      "covered_count": 73970844,
+      "coverage_rate": 0.943077,
+      "gap": 0.0,
+      "mean_set_size": 0.993789,
+      "mean_score": 0.073541,
+      "empty_set_count": 604873,
+      "empty_set_rate": 0.007712
+    },
+    "qtile2_t0.0606_0.0826": {
+      "pixel_count": 39217650,
+      "covered_count": 34282372,
+      "coverage_rate": 0.874157,
+      "gap": 0.025843,
+      "mean_set_size": 0.970069,
+      "mean_score": 0.147623,
+      "empty_set_count": 1231764,
+      "empty_set_rate": 0.031408
+    },
+    "qtile3_t0.0826_0.1353": {
+      "pixel_count": 39242947,
+      "covered_count": 34447393,
+      "coverage_rate": 0.877798,
+      "gap": 0.022202,
+      "mean_set_size": 0.978449,
+      "mean_score": 0.139874,
+      "empty_set_count": 894722,
+      "empty_set_rate": 0.0228
+    },
+    "qtile4_t0.1353_1.00": {
+      "pixel_count": 39257807,
+      "covered_count": 36167989,
+      "coverage_rate": 0.921294,
+      "gap": 0.0,
+      "mean_set_size": 0.991587,
+      "mean_score": 0.090965,
+      "empty_set_count": 376485,
+      "empty_set_rate": 0.00959
+    }
+  },
+  "overall_test_coverage": 0.911878,
+  "max_gap": 0.9,
+  "bin0_gap": 0.9,
+  "bin0_pixel_ratio": 0.0
+}
