@@ -1,0 +1,51 @@
+{
+  "total_valid_pixels": 449381364,
+  "per_bin": {
+    "bin0_t0.00_0.20": {
+      "pixel_count": 395790037,
+      "ratio_of_total": 0.880744,
+      "sufficient_for_pscp": true
+    },
+    "bin1_t0.20_0.40": {
+      "pixel_count": 52534319,
+      "ratio_of_total": 0.116904,
+      "sufficient_for_pscp": true
+    },
+    "bin2_t0.40_0.60": {
+      "pixel_count": 1017470,
+      "ratio_of_total": 0.002264,
+      "sufficient_for_pscp": true
+    },
+    "bin3_t0.60_0.80": {
+      "pixel_count": 39538,
+      "ratio_of_total": 8.8e-05,
+      "sufficient_for_pscp": true
+    },
+    "bin4_t0.80_1.00": {
+      "pixel_count": 0,
+      "ratio_of_total": 0.0,
+      "sufficient_for_pscp": false
+    }
+  },
+  "bin0_ratio": 0.880744,
+  "pscp_feasible": false,
+  "quantile_edges_from_foggy_test": {
+    "q20": 0.062207,
+    "q40": 0.08218,
+    "q60": 0.13541,
+    "q80": 0.280898,
+    "edges": [
+      0.0,
+      0.062207,
+      0.08218,
+      0.13541,
+      0.280898,
+      1.01
+    ]
+  },
+  "analysis": {
+    "bin0_fixed_ratio": 0.880744,
+    "calibration_intersects_fog_distribution": true,
+    "note": "Calibration set (Cityscapes clear) has ~88% of pixels with t<0.2, meaning the model rarely sees 'clear weather' pixels even in training. This is because Depth Anything estimates low transmittance even on clear days due to atmospheric perspective (distant objects appear hazy)."
+  }
+}

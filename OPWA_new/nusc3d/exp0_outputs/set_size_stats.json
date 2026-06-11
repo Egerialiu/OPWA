@@ -1,0 +1,98 @@
+{
+  "foggy_cs": {
+    "overall_mean_set_size": 0.950116,
+    "overall_test_coverage": 0.810781,
+    "max_gap": 0.116246,
+    "bin0_gap": 0.116246,
+    "bins": [
+      {
+        "bin_id": 0,
+        "bin_name": "bin0_t0.00_0.20",
+        "mean_set_size": 0.941567,
+        "coverage_rate": 0.783754,
+        "gap": 0.116246,
+        "empty_set_rate": 0.060105
+      },
+      {
+        "bin_id": 1,
+        "bin_name": "bin1_t0.20_0.40",
+        "mean_set_size": 0.968819,
+        "coverage_rate": 0.870715,
+        "gap": 0.029285,
+        "empty_set_rate": 0.031791
+      },
+      {
+        "bin_id": 2,
+        "bin_name": "bin2_t0.40_0.60",
+        "mean_set_size": 0.978006,
+        "coverage_rate": 0.895861,
+        "gap": 0.004139,
+        "empty_set_rate": 0.022523
+      },
+      {
+        "bin_id": 3,
+        "bin_name": "bin3_t0.60_0.80",
+        "mean_set_size": 0.96591,
+        "coverage_rate": 0.8642,
+        "gap": 0.0358,
+        "empty_set_rate": 0.034659
+      },
+      {
+        "bin_id": 4,
+        "bin_name": "bin4_t0.80_1.00",
+        "mean_set_size": 0.971771,
+        "coverage_rate": 0.882021,
+        "gap": 0.017979,
+        "empty_set_rate": 0.028541
+      }
+    ]
+  },
+  "acdc_fog": {
+    "overall_mean_set_size": 0.985537,
+    "overall_test_coverage": 0.911878,
+    "max_gap": 0.0,
+    "bin0_gap": 0.0,
+    "bins": [
+      {
+        "bin_id": 0,
+        "bin_name": "bin0_t0.00_0.20",
+        "mean_set_size": 0.984217,
+        "coverage_rate": 0.908796,
+        "gap": 0.0,
+        "empty_set_rate": 0.017179
+      },
+      {
+        "bin_id": 1,
+        "bin_name": "bin1_t0.20_0.40",
+        "mean_set_size": 0.994258,
+        "coverage_rate": 0.942027,
+        "gap": 0.0,
+        "empty_set_rate": 0.006798
+      },
+      {
+        "bin_id": 2,
+        "bin_name": "bin2_t0.40_0.60",
+        "mean_set_size": 0.998028,
+        "coverage_rate": 0.905654,
+        "gap": 0.0,
+        "empty_set_rate": 0.004029
+      },
+      {
+        "bin_id": 3,
+        "bin_name": "bin3_t0.60_0.80",
+        "mean_set_size": 0.99971,
+        "coverage_rate": 0.912671,
+        "gap": 0.0,
+        "empty_set_rate": 0.002133
+      },
+      {
+        "bin_id": 4,
+        "bin_name": "bin4_t0.80_1.00",
+        "mean_set_size": 1.002053,
+        "coverage_rate": 0.922532,
+        "gap": 0.0,
+        "empty_set_rate": 0.0
+      }
+    ]
+  }
+}

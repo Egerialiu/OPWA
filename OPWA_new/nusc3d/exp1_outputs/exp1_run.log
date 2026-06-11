@@ -1,0 +1,45 @@
+2026-06-10 11:03:31,318 [INFO] Experiment pipeline started at 2026-06-10 11:03:31.318086
+2026-06-10 11:03:31,318 [INFO] Device: cuda
+2026-06-10 11:03:31,318 [INFO] Output: /root/opwa_v3/exp1_outputs/
+2026-06-10 11:03:31,318 [INFO] ============================================================
+2026-06-10 11:03:31,318 [INFO] STEP DIAGNOSE: Calibration Set Bin Distribution
+2026-06-10 11:03:31,318 [INFO] ============================================================
+2026-06-10 11:04:03,425 [INFO] using MLP layer as FFN
+2026-06-10 11:05:33,837 [INFO]   Total valid calibration pixels: 449,381,364
+2026-06-10 11:05:33,837 [INFO]   Bin 0 ratio: 0.880744
+2026-06-10 11:05:33,837 [INFO]   PS-CP feasible: False
+2026-06-10 11:05:33,837 [INFO]   ✓ Calibration set has sufficient pixels across all bins.
+2026-06-10 11:05:33,837 [INFO] Diagnose complete.
+2026-06-10 11:05:33,837 [INFO] ============================================================
+2026-06-10 11:05:33,837 [INFO] Pipeline complete.
+2026-06-10 11:05:33,837 [INFO] ============================================================
+2026-06-10 11:06:02,097 [INFO] Experiment pipeline started at 2026-06-10 11:06:02.097389
+2026-06-10 11:06:02,097 [INFO] Device: cuda
+2026-06-10 11:06:02,097 [INFO] Output: /root/opwa_v3/exp1_outputs/
+2026-06-10 11:06:02,097 [INFO] ============================================================
+2026-06-10 11:06:02,097 [INFO] EXP 1: PS-CP (Physics-Stratified Conformal Prediction)
+2026-06-10 11:06:02,097 [INFO] ============================================================
+2026-06-10 11:06:02,539 [INFO] Running PS-CP calibration...
+2026-06-10 11:06:34,048 [INFO] using MLP layer as FFN
+2026-06-10 11:09:25,718 [INFO]   q_hats: [0.57, 0.0028, 0.0137, 0.0016, 0.5138]
+2026-06-10 11:09:25,720 [INFO] Running PS-CP test evaluation...
+2026-06-10 11:09:55,930 [INFO] using MLP layer as FFN
+2026-06-10 11:19:07,219 [INFO] Experiment pipeline started at 2026-06-10 11:19:07.219420
+2026-06-10 11:19:07,219 [INFO] Device: cuda
+2026-06-10 11:19:07,219 [INFO] Output: /root/opwa_v3/exp1_outputs/
+2026-06-10 11:19:07,219 [INFO] ============================================================
+2026-06-10 11:19:07,219 [INFO] EXP 1: PS-CP (Physics-Stratified Conformal Prediction)
+2026-06-10 11:19:07,219 [INFO] ============================================================
+2026-06-10 11:19:07,706 [INFO] Running PS-CP calibration...
+2026-06-10 11:19:39,280 [INFO] using MLP layer as FFN
+2026-06-10 11:22:29,333 [INFO]   q_hats: [0.57, 0.2569, 0.2569, 0.2569, 0.5138]
+2026-06-10 11:22:29,333 [INFO] Running PS-CP test evaluation...
+2026-06-10 11:22:59,525 [INFO] using MLP layer as FFN
+2026-06-10 11:28:27,699 [INFO] Experiment pipeline started at 2026-06-10 11:28:27.699536
+2026-06-10 11:28:27,699 [INFO] Device: cuda
+2026-06-10 11:28:27,699 [INFO] Output: /root/opwa_v3/exp1_outputs/
+2026-06-10 11:28:27,699 [INFO] ============================================================
+2026-06-10 11:28:27,699 [INFO] EXP 2: Baseline Comparisons
+2026-06-10 11:28:27,699 [INFO] ============================================================
+2026-06-10 11:28:28,143 [INFO] Running Weighted CP...
+2026-06-10 11:28:59,701 [INFO] using MLP layer as FFN

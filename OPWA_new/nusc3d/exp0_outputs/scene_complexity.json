@@ -1,0 +1,44 @@
+{
+  "calibration": {
+    "label": "Cityscapes Cal",
+    "avg_gt_classes": 7.93,
+    "mean_score": 0.118502,
+    "frac_above_qhat": 0.100004,
+    "bin0_gap": 0.010445
+  },
+  "foggy_cs": {
+    "label": "Foggy CS",
+    "avg_gt_classes": 7.93,
+    "mean_score": 0.207562,
+    "frac_above_qhat": 0.189221,
+    "bin0_gap": 0.116246
+  },
+  "acdc_fog": {
+    "label": "ACDC Fog",
+    "avg_gt_classes": 7.4,
+    "mean_score": 0.105107,
+    "frac_above_qhat": 0.088113,
+    "bin0_gap": 0.0
+  },
+  "acdc_night": {
+    "label": "ACDC Night",
+    "avg_gt_classes": 6.57,
+    "mean_score": 0.41572,
+    "frac_above_qhat": 0.406552,
+    "bin0_gap": 0.366781
+  },
+  "acdc_rain": {
+    "label": "ACDC Rain",
+    "avg_gt_classes": 6.87,
+    "mean_score": 0.164174,
+    "frac_above_qhat": 0.14816,
+    "bin0_gap": 0.023784
+  },
+  "acdc_snow": {
+    "label": "ACDC Snow",
+    "avg_gt_classes": 7.0,
+    "mean_score": 0.194,
+    "frac_above_qhat": 0.177093,
+    "bin0_gap": 0.058417
+  }
+}

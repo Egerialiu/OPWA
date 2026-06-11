@@ -1,0 +1,80 @@
+{
+  "dataset": "acdc_fog_val",
+  "condition_variable": "DCP",
+  "q_hat": 0.513809,
+  "target_coverage": 0.9,
+  "alpha": 0.1,
+  "overall_coverage": 0.911878,
+  "overall_mean_score": 0.10511,
+  "bin_strategy": "quantile",
+  "quantile_edges": [
+    0.0,
+    0.164706,
+    0.254902,
+    0.364706,
+    0.776471,
+    1.0
+  ],
+  "bins": {
+    "qtile0_dcp0.00_0.1647": {
+      "bin_id": 0,
+      "dcp_range": [
+        0.0,
+        0.164706
+      ],
+      "pixel_count": 38034647,
+      "pixel_ratio": 0.193902,
+      "coverage_rate": 0.847632,
+      "gap": 0.052368,
+      "mean_score": 0.17701
+    },
+    "qtile1_dcp0.1647_0.2549": {
+      "bin_id": 1,
+      "dcp_range": [
+        0.164706,
+        0.254902
+      ],
+      "pixel_count": 39869220,
+      "pixel_ratio": 0.203255,
+      "coverage_rate": 0.86397,
+      "gap": 0.03603,
+      "mean_score": 0.154354
+    },
+    "qtile2_dcp0.2549_0.3647": {
+      "bin_id": 2,
+      "dcp_range": [
+        0.254902,
+        0.364706
+      ],
+      "pixel_count": 39350175,
+      "pixel_ratio": 0.200609,
+      "coverage_rate": 0.930193,
+      "gap": 0.0,
+      "mean_score": 0.082532
+    },
+    "qtile3_dcp0.3647_0.7765": {
+      "bin_id": 3,
+      "dcp_range": [
+        0.364706,
+        0.776471
+      ],
+      "pixel_count": 38692421,
+      "pixel_ratio": 0.197255,
+      "coverage_rate": 0.924269,
+      "gap": 0.0,
+      "mean_score": 0.097191
+    },
+    "qtile4_dcp0.7765_1.00": {
+      "bin_id": 4,
+      "dcp_range": [
+        0.776471,
+        1.0
+      ],
+      "pixel_count": 40207539,
+      "pixel_ratio": 0.204979,
+      "coverage_rate": 0.990311,
+      "gap": 0.0,
+      "mean_score": 0.017985
+    }
+  }
+}

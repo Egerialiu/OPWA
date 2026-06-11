@@ -1,0 +1,72 @@
+{
+  "foggy_cs": {
+    "dataset": "foggy_cs",
+    "label": "Foggy Cityscapes",
+    "n_images": 500,
+    "avg_n_components": 100.126,
+    "avg_avg_size": 4539.041757716846,
+    "avg_max_size": 232907.228,
+    "avg_max_ratio": 0.6254381815342713,
+    "avg_frac_large": 0.10615477590597826,
+    "avg_frac_small": 0.7160859033463798,
+    "avg_total_uncovered": 347034.454,
+    "median_avg_size": 3344.467225445949,
+    "median_max_size": 190209.5
+  },
+  "acdc_rain": {
+    "dataset": "acdc_rain",
+    "label": "ACDC Rain",
+    "n_images": 100,
+    "avg_n_components": 333.69,
+    "avg_avg_size": 1028.1414624133438,
+    "avg_max_size": 169021.6,
+    "avg_max_ratio": 0.5493414628483468,
+    "avg_frac_large": 0.04262995907368957,
+    "avg_frac_small": 0.81594981218405,
+    "avg_total_uncovered": 291085.25,
+    "median_avg_size": 819.6921019789625,
+    "median_max_size": 139430.0
+  },
+  "acdc_snow": {
+    "dataset": "acdc_snow",
+    "label": "ACDC Snow",
+    "n_images": 100,
+    "avg_n_components": 214.6,
+    "avg_avg_size": 1972.6807085033142,
+    "avg_max_size": 192000.62,
+    "avg_max_ratio": 0.5195498323085754,
+    "avg_frac_large": 0.07352191833527556,
+    "avg_frac_small": 0.7744593432183983,
+    "avg_total_uncovered": 346666.44,
+    "median_avg_size": 1433.416858141858,
+    "median_max_size": 144284.0
+  },
+  "acdc_night": {
+    "dataset": "acdc_night",
+    "label": "ACDC Night",
+    "n_images": 106,
+    "avg_n_components": 37.85849056603774,
+    "avg_avg_size": 27739.37034433252,
+    "avg_max_size": 544750.0660377359,
+    "avg_max_ratio": 0.6715174647955706,
+    "avg_frac_large": 0.21276776087496624,
+    "avg_frac_small": 0.575263809373601,
+    "avg_total_uncovered": 776352.7452830189,
+    "median_avg_size": 22075.193473193474,
+    "median_max_size": 441762.0
+  },
+  "acdc_fog": {
+    "dataset": "acdc_fog",
+    "label": "ACDC Fog",
+    "n_images": 100,
+    "avg_n_components": 283.59,
+    "avg_avg_size": 698.9017824746246,
+    "avg_max_size": 70551.84,
+    "avg_max_ratio": 0.37479628754387095,
+    "avg_frac_large": 0.054561942375410316,
+    "avg_frac_small": 0.8023365534234166,
+    "avg_total_uncovered": 172854.04,
+    "median_avg_size": 585.8659028324155,
+    "median_max_size": 50560.5
+  }
+}

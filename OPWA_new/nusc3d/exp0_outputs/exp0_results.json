@@ -1,0 +1,63 @@
+{
+  "dataset": "foggy_cityscapes_beta0.02",
+  "alpha": 0.1,
+  "q_hat": 0.513809,
+  "calibration_pixel_count": 449381364,
+  "calibration_coverage": 0.9,
+  "bins": {
+    "bin0_t0.00_0.20": {
+      "pixel_count": 652297028,
+      "covered_count": 511240616,
+      "coverage_rate": 0.783754,
+      "gap": 0.116246,
+      "mean_set_size": 0.941567,
+      "mean_score": 0.239131,
+      "empty_set_count": 39206420,
+      "empty_set_rate": 0.060105
+    },
+    "bin1_t0.20_0.40": {
+      "pixel_count": 158757079,
+      "covered_count": 138232123,
+      "coverage_rate": 0.870715,
+      "gap": 0.029285,
+      "mean_set_size": 0.968819,
+      "mean_score": 0.135779,
+      "empty_set_count": 5047026,
+      "empty_set_rate": 0.031791
+    },
+    "bin2_t0.40_0.60": {
+      "pixel_count": 75111829,
+      "covered_count": 67289756,
+      "coverage_rate": 0.895861,
+      "gap": 0.004139,
+      "mean_set_size": 0.978006,
+      "mean_score": 0.110159,
+      "empty_set_count": 1691753,
+      "empty_set_rate": 0.022523
+    },
+    "bin3_t0.60_0.80": {
+      "pixel_count": 26583931,
+      "covered_count": 22973845,
+      "coverage_rate": 0.8642,
+      "gap": 0.0358,
+      "mean_set_size": 0.96591,
+      "mean_score": 0.147453,
+      "empty_set_count": 921365,
+      "empty_set_rate": 0.034659
+    },
+    "bin4_t0.80_1.00": {
+      "pixel_count": 4268622,
+      "covered_count": 3765016,
+      "coverage_rate": 0.882021,
+      "gap": 0.017979,
+      "mean_set_size": 0.971771,
+      "mean_score": 0.140312,
+      "empty_set_count": 121829,
+      "empty_set_rate": 0.028541
+    }
+  },
+  "overall_test_coverage": 0.810781,
+  "max_gap": 0.116246,
+  "bin0_gap": 0.116246,
+  "bin0_pixel_ratio": 0.711324
+}

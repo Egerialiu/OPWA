@@ -1,0 +1,1252 @@
+[
+  {
+    "file": "frankfurt_000000_000294_leftImg8bit.png",
+    "t_mean": 0.10069510340690613,
+    "t_std": 0.046974197030067444
+  },
+  {
+    "file": "frankfurt_000000_000576_leftImg8bit.png",
+    "t_mean": 0.10628879070281982,
+    "t_std": 0.05736270919442177
+  },
+  {
+    "file": "frankfurt_000000_001016_leftImg8bit.png",
+    "t_mean": 0.10879132151603699,
+    "t_std": 0.06806997209787369
+  },
+  {
+    "file": "frankfurt_000000_001236_leftImg8bit.png",
+    "t_mean": 0.11530965566635132,
+    "t_std": 0.06877629458904266
+  },
+  {
+    "file": "frankfurt_000000_001751_leftImg8bit.png",
+    "t_mean": 0.1092873215675354,
+    "t_std": 0.06221284717321396
+  },
+  {
+    "file": "frankfurt_000000_002196_leftImg8bit.png",
+    "t_mean": 0.10111677646636963,
+    "t_std": 0.056463927030563354
+  },
+  {
+    "file": "frankfurt_000000_002963_leftImg8bit.png",
+    "t_mean": 0.10606016218662262,
+    "t_std": 0.05983594432473183
+  },
+  {
+    "file": "frankfurt_000000_003025_leftImg8bit.png",
+    "t_mean": 0.10285671800374985,
+    "t_std": 0.055806491523981094
+  },
+  {
+    "file": "frankfurt_000000_003357_leftImg8bit.png",
+    "t_mean": 0.10387875884771347,
+    "t_std": 0.05448729172348976
+  },
+  {
+    "file": "frankfurt_000000_003920_leftImg8bit.png",
+    "t_mean": 0.11166514456272125,
+    "t_std": 0.06261739879846573
+  },
+  {
+    "file": "frankfurt_000000_004617_leftImg8bit.png",
+    "t_mean": 0.10592431575059891,
+    "t_std": 0.06618625670671463
+  },
+  {
+    "file": "frankfurt_000000_005543_leftImg8bit.png",
+    "t_mean": 0.11010193824768066,
+    "t_std": 0.06727848201990128
+  },
+  {
+    "file": "frankfurt_000000_005898_leftImg8bit.png",
+    "t_mean": 0.10336584597826004,
+    "t_std": 0.06329334527254105
+  },
+  {
+    "file": "frankfurt_000000_006589_leftImg8bit.png",
+    "t_mean": 0.11178377270698547,
+    "t_std": 0.07110719382762909
+  },
+  {
+    "file": "frankfurt_000000_007365_leftImg8bit.png",
+    "t_mean": 0.10498452931642532,
+    "t_std": 0.06295210868120193
+  },
+  {
+    "file": "frankfurt_000000_008206_leftImg8bit.png",
+    "t_mean": 0.10905721783638,
+    "t_std": 0.0713384598493576
+  },
+  {
+    "file": "frankfurt_000000_008451_leftImg8bit.png",
+    "t_mean": 0.09323415905237198,
+    "t_std": 0.05024747923016548
+  },
+  {
+    "file": "frankfurt_000000_009291_leftImg8bit.png",
+    "t_mean": 0.09694095700979233,
+    "t_std": 0.05252052843570709
+  },
+  {
+    "file": "frankfurt_000000_009561_leftImg8bit.png",
+    "t_mean": 0.09334743767976761,
+    "t_std": 0.05407906323671341
+  },
+  {
+    "file": "frankfurt_000000_009688_leftImg8bit.png",
+    "t_mean": 0.10422638058662415,
+    "t_std": 0.07167915999889374
+  },
+  {
+    "file": "frankfurt_000000_009969_leftImg8bit.png",
+    "t_mean": 0.11175071448087692,
+    "t_std": 0.06776925176382065
+  },
+  {
+    "file": "frankfurt_000000_010351_leftImg8bit.png",
+    "t_mean": 0.10185135900974274,
+    "t_std": 0.049854472279548645
+  },
+  {
+    "file": "frankfurt_000000_010763_leftImg8bit.png",
+    "t_mean": 0.10796727985143661,
+    "t_std": 0.061338070780038834
+  },
+  {
+    "file": "frankfurt_000000_011007_leftImg8bit.png",
+    "t_mean": 0.1039552316069603,
+    "t_std": 0.06048000976443291
+  },
+  {
+    "file": "frankfurt_000000_011074_leftImg8bit.png",
+    "t_mean": 0.09791334718465805,
+    "t_std": 0.043748363852500916
+  },
+  {
+    "file": "frankfurt_000000_011461_leftImg8bit.png",
+    "t_mean": 0.09491635859012604,
+    "t_std": 0.049645595252513885
+  },
+  {
+    "file": "frankfurt_000000_011810_leftImg8bit.png",
+    "t_mean": 0.11154860258102417,
+    "t_std": 0.06693563610315323
+  },
+  {
+    "file": "frankfurt_000000_012009_leftImg8bit.png",
+    "t_mean": 0.10710311681032181,
+    "t_std": 0.06436803936958313
+  },
+  {
+    "file": "frankfurt_000000_012121_leftImg8bit.png",
+    "t_mean": 0.10656727105379105,
+    "t_std": 0.0573955699801445
+  },
+  {
+    "file": "frankfurt_000000_012868_leftImg8bit.png",
+    "t_mean": 0.11828886717557907,
+    "t_std": 0.06931367516517639
+  },
+  {
+    "file": "frankfurt_000000_013067_leftImg8bit.png",
+    "t_mean": 0.11021832376718521,
+    "t_std": 0.06630329042673111
+  },
+  {
+    "file": "frankfurt_000000_013240_leftImg8bit.png",
+    "t_mean": 0.10065654665231705,
+    "t_std": 0.06640112400054932
+  },
+  {
+    "file": "frankfurt_000000_013382_leftImg8bit.png",
+    "t_mean": 0.11830788105726242,
+    "t_std": 0.07067057490348816
+  },
+  {
+    "file": "frankfurt_000000_013942_leftImg8bit.png",
+    "t_mean": 0.10149173438549042,
+    "t_std": 0.06002160906791687
+  },
+  {
+    "file": "frankfurt_000000_014480_leftImg8bit.png",
+    "t_mean": 0.09708413481712341,
+    "t_std": 0.04863286763429642
+  },
+  {
+    "file": "frankfurt_000000_015389_leftImg8bit.png",
+    "t_mean": 0.09776736050844193,
+    "t_std": 0.05381259322166443
+  },
+  {
+    "file": "frankfurt_000000_015676_leftImg8bit.png",
+    "t_mean": 0.11599865555763245,
+    "t_std": 0.078331358730793
+  },
+  {
+    "file": "frankfurt_000000_016005_leftImg8bit.png",
+    "t_mean": 0.11409588903188705,
+    "t_std": 0.07466689497232437
+  },
+  {
+    "file": "frankfurt_000000_016286_leftImg8bit.png",
+    "t_mean": 0.09830940514802933,
+    "t_std": 0.054258596152067184
+  },
+  {
+    "file": "frankfurt_000000_017228_leftImg8bit.png",
+    "t_mean": 0.09721767902374268,
+    "t_std": 0.05826684087514877
+  },
+  {
+    "file": "frankfurt_000000_017476_leftImg8bit.png",
+    "t_mean": 0.10767751932144165,
+    "t_std": 0.06567841023206711
+  },
+  {
+    "file": "frankfurt_000000_018797_leftImg8bit.png",
+    "t_mean": 0.10913515090942383,
+    "t_std": 0.06791640818119049
+  },
+  {
+    "file": "frankfurt_000000_019607_leftImg8bit.png",
+    "t_mean": 0.10392972826957703,
+    "t_std": 0.06118830665946007
+  },
+  {
+    "file": "frankfurt_000000_020215_leftImg8bit.png",
+    "t_mean": 0.12062854319810867,
+    "t_std": 0.06887286901473999
+  },
+  {
+    "file": "frankfurt_000000_020321_leftImg8bit.png",
+    "t_mean": 0.10334734618663788,
+    "t_std": 0.05381585285067558
+  },
+  {
+    "file": "frankfurt_000000_020880_leftImg8bit.png",
+    "t_mean": 0.1512865275144577,
+    "t_std": 0.1162567287683487
+  },
+  {
+    "file": "frankfurt_000000_021667_leftImg8bit.png",
+    "t_mean": 0.11513221263885498,
+    "t_std": 0.07383742183446884
+  },
+  {
+    "file": "frankfurt_000000_021879_leftImg8bit.png",
+    "t_mean": 0.11510664969682693,
+    "t_std": 0.07973241060972214
+  },
+  {
+    "file": "frankfurt_000000_022254_leftImg8bit.png",
+    "t_mean": 0.1073174998164177,
+    "t_std": 0.062465641647577286
+  },
+  {
+    "file": "frankfurt_000000_022797_leftImg8bit.png",
+    "t_mean": 0.11541446298360825,
+    "t_std": 0.0744614452123642
+  },
+  {
+    "file": "frankfurt_000001_000538_leftImg8bit.png",
+    "t_mean": 0.097744882106781,
+    "t_std": 0.05559229105710983
+  },
+  {
+    "file": "frankfurt_000001_001464_leftImg8bit.png",
+    "t_mean": 0.17336225509643555,
+    "t_std": 0.14670467376708984
+  },
+  {
+    "file": "frankfurt_000001_002512_leftImg8bit.png",
+    "t_mean": 0.13249540328979492,
+    "t_std": 0.08926613628864288
+  },
+  {
+    "file": "frankfurt_000001_002646_leftImg8bit.png",
+    "t_mean": 0.11635833978652954,
+    "t_std": 0.07874651998281479
+  },
+  {
+    "file": "frankfurt_000001_002759_leftImg8bit.png",
+    "t_mean": 0.11087184399366379,
+    "t_std": 0.07374225556850433
+  },
+  {
+    "file": "frankfurt_000001_003056_leftImg8bit.png",
+    "t_mean": 0.11440393328666687,
+    "t_std": 0.0730002298951149
+  },
+  {
+    "file": "frankfurt_000001_003588_leftImg8bit.png",
+    "t_mean": 0.124811552464962,
+    "t_std": 0.0748850405216217
+  },
+  {
+    "file": "frankfurt_000001_004327_leftImg8bit.png",
+    "t_mean": 0.08979629725217819,
+    "t_std": 0.04800301417708397
+  },
+  {
+    "file": "frankfurt_000001_004736_leftImg8bit.png",
+    "t_mean": 0.10488542914390564,
+    "t_std": 0.06196993961930275
+  },
+  {
+    "file": "frankfurt_000001_004859_leftImg8bit.png",
+    "t_mean": 0.10703075677156448,
+    "t_std": 0.05890749767422676
+  },
+  {
+    "file": "frankfurt_000001_005184_leftImg8bit.png",
+    "t_mean": 0.10588128119707108,
+    "t_std": 0.061877939850091934
+  },
+  {
+    "file": "frankfurt_000001_005410_leftImg8bit.png",
+    "t_mean": 0.10275008529424667,
+    "t_std": 0.05177570506930351
+  },
+  {
+    "file": "frankfurt_000001_005703_leftImg8bit.png",
+    "t_mean": 0.11055173724889755,
+    "t_std": 0.06518308073282242
+  },
+  {
+    "file": "frankfurt_000001_005898_leftImg8bit.png",
+    "t_mean": 0.10793069750070572,
+    "t_std": 0.06568702310323715
+  },
+  {
+    "file": "frankfurt_000001_007285_leftImg8bit.png",
+    "t_mean": 0.12132830917835236,
+    "t_std": 0.08135886490345001
+  },
+  {
+    "file": "frankfurt_000001_007407_leftImg8bit.png",
+    "t_mean": 0.08532702922821045,
+    "t_std": 0.04364417493343353
+  },
+  {
+    "file": "frankfurt_000001_007622_leftImg8bit.png",
+    "t_mean": 0.10286413878202438,
+    "t_std": 0.0572216734290123
+  },
+  {
+    "file": "frankfurt_000001_007857_leftImg8bit.png",
+    "t_mean": 0.10174090415239334,
+    "t_std": 0.05686540529131889
+  },
+  {
+    "file": "frankfurt_000001_007973_leftImg8bit.png",
+    "t_mean": 0.09931197762489319,
+    "t_std": 0.05645857751369476
+  },
+  {
+    "file": "frankfurt_000001_008200_leftImg8bit.png",
+    "t_mean": 0.11132045090198517,
+    "t_std": 0.07101000100374222
+  },
+  {
+    "file": "frankfurt_000001_008688_leftImg8bit.png",
+    "t_mean": 0.10653135925531387,
+    "t_std": 0.06347516179084778
+  },
+  {
+    "file": "frankfurt_000001_009058_leftImg8bit.png",
+    "t_mean": 0.09476132690906525,
+    "t_std": 0.049521759152412415
+  },
+  {
+    "file": "frankfurt_000001_009504_leftImg8bit.png",
+    "t_mean": 0.09495106339454651,
+    "t_std": 0.049777548760175705
+  },
+  {
+    "file": "frankfurt_000001_009854_leftImg8bit.png",
+    "t_mean": 0.09930720180273056,
+    "t_std": 0.05044611170887947
+  },
+  {
+    "file": "frankfurt_000001_010156_leftImg8bit.png",
+    "t_mean": 0.10020162165164948,
+    "t_std": 0.05492198094725609
+  },
+  {
+    "file": "frankfurt_000001_010444_leftImg8bit.png",
+    "t_mean": 0.09413716942071915,
+    "t_std": 0.05462232232093811
+  },
+  {
+    "file": "frankfurt_000001_010600_leftImg8bit.png",
+    "t_mean": 0.12735380232334137,
+    "t_std": 0.08088930696249008
+  },
+  {
+    "file": "frankfurt_000001_010830_leftImg8bit.png",
+    "t_mean": 0.09810728579759598,
+    "t_std": 0.04998442903161049
+  },
+  {
+    "file": "frankfurt_000001_011162_leftImg8bit.png",
+    "t_mean": 0.11660347133874893,
+    "t_std": 0.07127274572849274
+  },
+  {
+    "file": "frankfurt_000001_011715_leftImg8bit.png",
+    "t_mean": 0.10519375652074814,
+    "t_std": 0.05581364408135414
+  },
+  {
+    "file": "frankfurt_000001_011835_leftImg8bit.png",
+    "t_mean": 0.09606420248746872,
+    "t_std": 0.04315746948122978
+  },
+  {
+    "file": "frankfurt_000001_012038_leftImg8bit.png",
+    "t_mean": 0.10079783201217651,
+    "t_std": 0.050028737634420395
+  },
+  {
+    "file": "frankfurt_000001_012519_leftImg8bit.png",
+    "t_mean": 0.11856802552938461,
+    "t_std": 0.07227341085672379
+  },
+  {
+    "file": "frankfurt_000001_012699_leftImg8bit.png",
+    "t_mean": 0.10422690212726593,
+    "t_std": 0.05129263550043106
+  },
+  {
+    "file": "frankfurt_000001_012738_leftImg8bit.png",
+    "t_mean": 0.1296859085559845,
+    "t_std": 0.0696139857172966
+  },
+  {
+    "file": "frankfurt_000001_012870_leftImg8bit.png",
+    "t_mean": 0.12482921779155731,
+    "t_std": 0.09238067269325256
+  },
+  {
+    "file": "frankfurt_000001_013016_leftImg8bit.png",
+    "t_mean": 0.10177617520093918,
+    "t_std": 0.04809550568461418
+  },
+  {
+    "file": "frankfurt_000001_013496_leftImg8bit.png",
+    "t_mean": 0.13080596923828125,
+    "t_std": 0.09710370749235153
+  },
+  {
+    "file": "frankfurt_000001_013710_leftImg8bit.png",
+    "t_mean": 0.1200975626707077,
+    "t_std": 0.07299857586622238
+  },
+  {
+    "file": "frankfurt_000001_014221_leftImg8bit.png",
+    "t_mean": 0.13427342474460602,
+    "t_std": 0.08659442514181137
+  },
+  {
+    "file": "frankfurt_000001_014406_leftImg8bit.png",
+    "t_mean": 0.11921791732311249,
+    "t_std": 0.07496454566717148
+  },
+  {
+    "file": "frankfurt_000001_014565_leftImg8bit.png",
+    "t_mean": 0.10547628998756409,
+    "t_std": 0.05404191464185715
+  },
+  {
+    "file": "frankfurt_000001_014741_leftImg8bit.png",
+    "t_mean": 0.10439466685056686,
+    "t_std": 0.066437266767025
+  },
+  {
+    "file": "frankfurt_000001_015091_leftImg8bit.png",
+    "t_mean": 0.11606098711490631,
+    "t_std": 0.0691666379570961
+  },
+  {
+    "file": "frankfurt_000001_015328_leftImg8bit.png",
+    "t_mean": 0.13309940695762634,
+    "t_std": 0.08700263500213623
+  },
+  {
+    "file": "frankfurt_000001_015768_leftImg8bit.png",
+    "t_mean": 0.1179497018456459,
+    "t_std": 0.05590974912047386
+  },
+  {
+    "file": "frankfurt_000001_016029_leftImg8bit.png",
+    "t_mean": 0.14038753509521484,
+    "t_std": 0.10210856795310974
+  },
+  {
+    "file": "frankfurt_000001_016273_leftImg8bit.png",
+    "t_mean": 0.10900440067052841,
+    "t_std": 0.05654357373714447
+  },
+  {
+    "file": "frankfurt_000001_016462_leftImg8bit.png",
+    "t_mean": 0.10915427654981613,
+    "t_std": 0.06423723697662354
+  },
+  {
+    "file": "frankfurt_000001_017101_leftImg8bit.png",
+    "t_mean": 0.1069733276963234,
+    "t_std": 0.06236159801483154
+  },
+  {
+    "file": "frankfurt_000001_017459_leftImg8bit.png",
+    "t_mean": 0.09673722833395004,
+    "t_std": 0.05146433785557747
+  },
+  {
+    "file": "frankfurt_000001_017842_leftImg8bit.png",
+    "t_mean": 0.09680899232625961,
+    "t_std": 0.05240265280008316
+  },
+  {
+    "file": "frankfurt_000001_018113_leftImg8bit.png",
+    "t_mean": 0.11143489927053452,
+    "t_std": 0.06811525672674179
+  },
+  {
+    "file": "frankfurt_000001_019698_leftImg8bit.png",
+    "t_mean": 0.10338278859853745,
+    "t_std": 0.060305528342723846
+  },
+  {
+    "file": "frankfurt_000001_019854_leftImg8bit.png",
+    "t_mean": 0.11414840072393417,
+    "t_std": 0.07336857169866562
+  },
+  {
+    "file": "frankfurt_000001_019969_leftImg8bit.png",
+    "t_mean": 0.10646351426839828,
+    "t_std": 0.0643516406416893
+  },
+  {
+    "file": "frankfurt_000001_020046_leftImg8bit.png",
+    "t_mean": 0.10692290961742401,
+    "t_std": 0.0689350888133049
+  },
+  {
+    "file": "frankfurt_000001_020287_leftImg8bit.png",
+    "t_mean": 0.10160817205905914,
+    "t_std": 0.05761867016553879
+  },
+  {
+    "file": "frankfurt_000001_020693_leftImg8bit.png",
+    "t_mean": 0.10203475505113602,
+    "t_std": 0.0592748299241066
+  },
+  {
+    "file": "frankfurt_000001_021406_leftImg8bit.png",
+    "t_mean": 0.09876374155282974,
+    "t_std": 0.04807182028889656
+  },
+  {
+    "file": "frankfurt_000001_021825_leftImg8bit.png",
+    "t_mean": 0.10736352205276489,
+    "t_std": 0.07213898748159409
+  },
+  {
+    "file": "frankfurt_000001_023235_leftImg8bit.png",
+    "t_mean": 0.09738984704017639,
+    "t_std": 0.05652100220322609
+  },
+  {
+    "file": "frankfurt_000001_023369_leftImg8bit.png",
+    "t_mean": 0.10156263411045074,
+    "t_std": 0.055664293467998505
+  },
+  {
+    "file": "frankfurt_000001_023769_leftImg8bit.png",
+    "t_mean": 0.11558655649423599,
+    "t_std": 0.069826140999794
+  },
+  {
+    "file": "frankfurt_000001_024927_leftImg8bit.png",
+    "t_mean": 0.11011821031570435,
+    "t_std": 0.06778179854154587
+  },
+  {
+    "file": "frankfurt_000001_025512_leftImg8bit.png",
+    "t_mean": 0.10226401686668396,
+    "t_std": 0.0599290207028389
+  },
+  {
+    "file": "frankfurt_000001_025713_leftImg8bit.png",
+    "t_mean": 0.10416795313358307,
+    "t_std": 0.06401306390762329
+  },
+  {
+    "file": "frankfurt_000001_025921_leftImg8bit.png",
+    "t_mean": 0.1052878201007843,
+    "t_std": 0.06350962072610855
+  },
+  {
+    "file": "frankfurt_000001_027325_leftImg8bit.png",
+    "t_mean": 0.09588952362537384,
+    "t_std": 0.05409201234579086
+  },
+  {
+    "file": "frankfurt_000001_028232_leftImg8bit.png",
+    "t_mean": 0.11505445837974548,
+    "t_std": 0.07112186402082443
+  },
+  {
+    "file": "frankfurt_000001_028335_leftImg8bit.png",
+    "t_mean": 0.12176147103309631,
+    "t_std": 0.07508724927902222
+  },
+  {
+    "file": "frankfurt_000001_028590_leftImg8bit.png",
+    "t_mean": 0.11672773957252502,
+    "t_std": 0.07405311614274979
+  },
+  {
+    "file": "frankfurt_000001_028854_leftImg8bit.png",
+    "t_mean": 0.10594786703586578,
+    "t_std": 0.06374824792146683
+  },
+  {
+    "file": "frankfurt_000001_029086_leftImg8bit.png",
+    "t_mean": 0.10852252691984177,
+    "t_std": 0.063416488468647
+  },
+  {
+    "file": "frankfurt_000001_029236_leftImg8bit.png",
+    "t_mean": 0.11528545618057251,
+    "t_std": 0.05785149335861206
+  },
+  {
+    "file": "frankfurt_000001_029600_leftImg8bit.png",
+    "t_mean": 0.11713451147079468,
+    "t_std": 0.06835679709911346
+  },
+  {
+    "file": "frankfurt_000001_030067_leftImg8bit.png",
+    "t_mean": 0.10380302369594574,
+    "t_std": 0.05599460378289223
+  },
+  {
+    "file": "frankfurt_000001_030310_leftImg8bit.png",
+    "t_mean": 0.11871833354234695,
+    "t_std": 0.07471414655447006
+  },
+  {
+    "file": "frankfurt_000001_030669_leftImg8bit.png",
+    "t_mean": 0.11389701813459396,
+    "t_std": 0.06302644312381744
+  },
+  {
+    "file": "frankfurt_000001_031266_leftImg8bit.png",
+    "t_mean": 0.10871300846338272,
+    "t_std": 0.06076887995004654
+  },
+  {
+    "file": "frankfurt_000001_031416_leftImg8bit.png",
+    "t_mean": 0.11451131850481033,
+    "t_std": 0.059334319084882736
+  },
+  {
+    "file": "frankfurt_000001_032018_leftImg8bit.png",
+    "t_mean": 0.11515340209007263,
+    "t_std": 0.05862098187208176
+  },
+  {
+    "file": "frankfurt_000001_032556_leftImg8bit.png",
+    "t_mean": 0.09865610301494598,
+    "t_std": 0.05250734090805054
+  },
+  {
+    "file": "frankfurt_000001_032711_leftImg8bit.png",
+    "t_mean": 0.1129685789346695,
+    "t_std": 0.06419241428375244
+  },
+  {
+    "file": "frankfurt_000001_032942_leftImg8bit.png",
+    "t_mean": 0.10970978438854218,
+    "t_std": 0.06048455461859703
+  },
+  {
+    "file": "frankfurt_000001_033655_leftImg8bit.png",
+    "t_mean": 0.12013162672519684,
+    "t_std": 0.07464005053043365
+  },
+  {
+    "file": "frankfurt_000001_034047_leftImg8bit.png",
+    "t_mean": 0.11156190186738968,
+    "t_std": 0.07443606108427048
+  },
+  {
+    "file": "frankfurt_000001_034816_leftImg8bit.png",
+    "t_mean": 0.10783291608095169,
+    "t_std": 0.0635744109749794
+  },
+  {
+    "file": "frankfurt_000001_035144_leftImg8bit.png",
+    "t_mean": 0.10704458504915237,
+    "t_std": 0.055166278034448624
+  },
+  {
+    "file": "frankfurt_000001_035864_leftImg8bit.png",
+    "t_mean": 0.13196176290512085,
+    "t_std": 0.0864880159497261
+  },
+  {
+    "file": "frankfurt_000001_037705_leftImg8bit.png",
+    "t_mean": 0.11676160246133804,
+    "t_std": 0.0715017020702362
+  },
+  {
+    "file": "frankfurt_000001_038245_leftImg8bit.png",
+    "t_mean": 0.10237769037485123,
+    "t_std": 0.05796853452920914
+  },
+  {
+    "file": "frankfurt_000001_038418_leftImg8bit.png",
+    "t_mean": 0.10621591657400131,
+    "t_std": 0.06233488395810127
+  },
+  {
+    "file": "frankfurt_000001_038645_leftImg8bit.png",
+    "t_mean": 0.10938847810029984,
+    "t_std": 0.06562386453151703
+  },
+  {
+    "file": "frankfurt_000001_038844_leftImg8bit.png",
+    "t_mean": 0.11168570071458817,
+    "t_std": 0.06357117742300034
+  },
+  {
+    "file": "frankfurt_000001_039895_leftImg8bit.png",
+    "t_mean": 0.10268577188253403,
+    "t_std": 0.05637810379266739
+  },
+  {
+    "file": "frankfurt_000001_040575_leftImg8bit.png",
+    "t_mean": 0.10169214755296707,
+    "t_std": 0.05962222442030907
+  },
+  {
+    "file": "frankfurt_000001_040732_leftImg8bit.png",
+    "t_mean": 0.095960333943367,
+    "t_std": 0.05612543597817421
+  },
+  {
+    "file": "frankfurt_000001_041074_leftImg8bit.png",
+    "t_mean": 0.10682907700538635,
+    "t_std": 0.06561393290758133
+  },
+  {
+    "file": "frankfurt_000001_041354_leftImg8bit.png",
+    "t_mean": 0.10494587570428848,
+    "t_std": 0.06260739266872406
+  },
+  {
+    "file": "frankfurt_000001_041517_leftImg8bit.png",
+    "t_mean": 0.10307786613702774,
+    "t_std": 0.055941905826330185
+  },
+  {
+    "file": "frankfurt_000001_041664_leftImg8bit.png",
+    "t_mean": 0.09961595386266708,
+    "t_std": 0.05759240314364433
+  },
+  {
+    "file": "frankfurt_000001_042098_leftImg8bit.png",
+    "t_mean": 0.11764175444841385,
+    "t_std": 0.07544796913862228
+  },
+  {
+    "file": "frankfurt_000001_042384_leftImg8bit.png",
+    "t_mean": 0.10609154403209686,
+    "t_std": 0.06469779461622238
+  },
+  {
+    "file": "frankfurt_000001_042733_leftImg8bit.png",
+    "t_mean": 0.10991962999105453,
+    "t_std": 0.06031377613544464
+  },
+  {
+    "file": "frankfurt_000001_043395_leftImg8bit.png",
+    "t_mean": 0.09415885806083679,
+    "t_std": 0.04906085506081581
+  },
+  {
+    "file": "frankfurt_000001_043564_leftImg8bit.png",
+    "t_mean": 0.09993671625852585,
+    "t_std": 0.05771644040942192
+  },
+  {
+    "file": "frankfurt_000001_044227_leftImg8bit.png",
+    "t_mean": 0.11253266781568527,
+    "t_std": 0.06768504530191422
+  },
+  {
+    "file": "frankfurt_000001_044413_leftImg8bit.png",
+    "t_mean": 0.10534373670816422,
+    "t_std": 0.06114356964826584
+  },
+  {
+    "file": "frankfurt_000001_044525_leftImg8bit.png",
+    "t_mean": 0.09580483287572861,
+    "t_std": 0.05322239547967911
+  },
+  {
+    "file": "frankfurt_000001_044658_leftImg8bit.png",
+    "t_mean": 0.09832388162612915,
+    "t_std": 0.053558655083179474
+  },
+  {
+    "file": "frankfurt_000001_044787_leftImg8bit.png",
+    "t_mean": 0.10711003839969635,
+    "t_std": 0.06607461720705032
+  },
+  {
+    "file": "frankfurt_000001_046126_leftImg8bit.png",
+    "t_mean": 0.10146859288215637,
+    "t_std": 0.060044627636671066
+  },
+  {
+    "file": "frankfurt_000001_046272_leftImg8bit.png",
+    "t_mean": 0.10845766216516495,
+    "t_std": 0.06346751749515533
+  },
+  {
+    "file": "frankfurt_000001_046504_leftImg8bit.png",
+    "t_mean": 0.110389843583107,
+    "t_std": 0.06373818963766098
+  },
+  {
+    "file": "frankfurt_000001_046779_leftImg8bit.png",
+    "t_mean": 0.11376181989908218,
+    "t_std": 0.06128012016415596
+  },
+  {
+    "file": "frankfurt_000001_047178_leftImg8bit.png",
+    "t_mean": 0.13272419571876526,
+    "t_std": 0.0793241560459137
+  },
+  {
+    "file": "frankfurt_000001_047552_leftImg8bit.png",
+    "t_mean": 0.11373014748096466,
+    "t_std": 0.0599050372838974
+  },
+  {
+    "file": "frankfurt_000001_048196_leftImg8bit.png",
+    "t_mean": 0.09236619621515274,
+    "t_std": 0.043856289237737656
+  },
+  {
+    "file": "frankfurt_000001_048355_leftImg8bit.png",
+    "t_mean": 0.11828184872865677,
+    "t_std": 0.0785939171910286
+  },
+  {
+    "file": "frankfurt_000001_048654_leftImg8bit.png",
+    "t_mean": 0.10528581589460373,
+    "t_std": 0.0630817785859108
+  },
+  {
+    "file": "frankfurt_000001_049078_leftImg8bit.png",
+    "t_mean": 0.11178591102361679,
+    "t_std": 0.06962468475103378
+  },
+  {
+    "file": "frankfurt_000001_049209_leftImg8bit.png",
+    "t_mean": 0.11810509115457535,
+    "t_std": 0.07807406783103943
+  },
+  {
+    "file": "frankfurt_000001_049298_leftImg8bit.png",
+    "t_mean": 0.10514895617961884,
+    "t_std": 0.07004290819168091
+  },
+  {
+    "file": "frankfurt_000001_049698_leftImg8bit.png",
+    "t_mean": 0.12259896099567413,
+    "t_std": 0.07646621763706207
+  },
+  {
+    "file": "frankfurt_000001_049770_leftImg8bit.png",
+    "t_mean": 0.10376662015914917,
+    "t_std": 0.05656891316175461
+  },
+  {
+    "file": "frankfurt_000001_050149_leftImg8bit.png",
+    "t_mean": 0.1043633371591568,
+    "t_std": 0.06486508995294571
+  },
+  {
+    "file": "frankfurt_000001_050686_leftImg8bit.png",
+    "t_mean": 0.12604588270187378,
+    "t_std": 0.0773988664150238
+  },
+  {
+    "file": "frankfurt_000001_051516_leftImg8bit.png",
+    "t_mean": 0.08675528317689896,
+    "t_std": 0.0467185415327549
+  },
+  {
+    "file": "frankfurt_000001_051737_leftImg8bit.png",
+    "t_mean": 0.10661731660366058,
+    "t_std": 0.061955273151397705
+  },
+  {
+    "file": "frankfurt_000001_051807_leftImg8bit.png",
+    "t_mean": 0.1049155592918396,
+    "t_std": 0.06421574205160141
+  },
+  {
+    "file": "frankfurt_000001_052120_leftImg8bit.png",
+    "t_mean": 0.11071249842643738,
+    "t_std": 0.06437927484512329
+  },
+  {
+    "file": "frankfurt_000001_052594_leftImg8bit.png",
+    "t_mean": 0.0914744958281517,
+    "t_std": 0.044045157730579376
+  },
+  {
+    "file": "frankfurt_000001_053102_leftImg8bit.png",
+    "t_mean": 0.09477369487285614,
+    "t_std": 0.04909233748912811
+  },
+  {
+    "file": "frankfurt_000001_054077_leftImg8bit.png",
+    "t_mean": 0.09507585316896439,
+    "t_std": 0.05386948958039284
+  },
+  {
+    "file": "frankfurt_000001_054219_leftImg8bit.png",
+    "t_mean": 0.0973435565829277,
+    "t_std": 0.0542747937142849
+  },
+  {
+    "file": "frankfurt_000001_054415_leftImg8bit.png",
+    "t_mean": 0.1113109141588211,
+    "t_std": 0.06419506669044495
+  },
+  {
+    "file": "frankfurt_000001_054640_leftImg8bit.png",
+    "t_mean": 0.107642263174057,
+    "t_std": 0.06252149492502213
+  },
+  {
+    "file": "frankfurt_000001_054884_leftImg8bit.png",
+    "t_mean": 0.10828480869531631,
+    "t_std": 0.06281781196594238
+  },
+  {
+    "file": "frankfurt_000001_055062_leftImg8bit.png",
+    "t_mean": 0.09887316823005676,
+    "t_std": 0.0549631342291832
+  },
+  {
+    "file": "frankfurt_000001_055172_leftImg8bit.png",
+    "t_mean": 0.08065083622932434,
+    "t_std": 0.03697789087891579
+  },
+  {
+    "file": "frankfurt_000001_055306_leftImg8bit.png",
+    "t_mean": 0.1325616091489792,
+    "t_std": 0.09212704002857208
+  },
+  {
+    "file": "frankfurt_000001_055387_leftImg8bit.png",
+    "t_mean": 0.13157787919044495,
+    "t_std": 0.09716857969760895
+  },
+  {
+    "file": "frankfurt_000001_055538_leftImg8bit.png",
+    "t_mean": 0.13866421580314636,
+    "t_std": 0.10584921389818192
+  },
+  {
+    "file": "frankfurt_000001_055603_leftImg8bit.png",
+    "t_mean": 0.11184477061033249,
+    "t_std": 0.068100705742836
+  },
+  {
+    "file": "frankfurt_000001_055709_leftImg8bit.png",
+    "t_mean": 0.11369380354881287,
+    "t_std": 0.0641605332493782
+  },
+  {
+    "file": "frankfurt_000001_056580_leftImg8bit.png",
+    "t_mean": 0.12933120131492615,
+    "t_std": 0.08534641563892365
+  },
+  {
+    "file": "frankfurt_000001_057181_leftImg8bit.png",
+    "t_mean": 0.1373601108789444,
+    "t_std": 0.09891988337039948
+  },
+  {
+    "file": "frankfurt_000001_057478_leftImg8bit.png",
+    "t_mean": 0.13824480772018433,
+    "t_std": 0.09892149269580841
+  },
+  {
+    "file": "frankfurt_000001_057954_leftImg8bit.png",
+    "t_mean": 0.1488673835992813,
+    "t_std": 0.1111350953578949
+  },
+  {
+    "file": "frankfurt_000001_058057_leftImg8bit.png",
+    "t_mean": 0.10630357265472412,
+    "t_std": 0.057030659168958664
+  },
+  {
+    "file": "frankfurt_000001_058176_leftImg8bit.png",
+    "t_mean": 0.10277926921844482,
+    "t_std": 0.057359445840120316
+  },
+  {
+    "file": "frankfurt_000001_058504_leftImg8bit.png",
+    "t_mean": 0.10640133917331696,
+    "t_std": 0.06306842714548111
+  },
+  {
+    "file": "frankfurt_000001_058914_leftImg8bit.png",
+    "t_mean": 0.09766694158315659,
+    "t_std": 0.05081876739859581
+  },
+  {
+    "file": "frankfurt_000001_059119_leftImg8bit.png",
+    "t_mean": 0.09835786372423172,
+    "t_std": 0.05354735627770424
+  },
+  {
+    "file": "frankfurt_000001_059642_leftImg8bit.png",
+    "t_mean": 0.10844206064939499,
+    "t_std": 0.06284406036138535
+  },
+  {
+    "file": "frankfurt_000001_059789_leftImg8bit.png",
+    "t_mean": 0.11142493039369583,
+    "t_std": 0.07102358341217041
+  },
+  {
+    "file": "frankfurt_000001_060135_leftImg8bit.png",
+    "t_mean": 0.1199333593249321,
+    "t_std": 0.08211850374937057
+  },
+  {
+    "file": "frankfurt_000001_060422_leftImg8bit.png",
+    "t_mean": 0.11718206107616425,
+    "t_std": 0.07707713544368744
+  },
+  {
+    "file": "frankfurt_000001_060545_leftImg8bit.png",
+    "t_mean": 0.12236712127923965,
+    "t_std": 0.08391188830137253
+  },
+  {
+    "file": "frankfurt_000001_060906_leftImg8bit.png",
+    "t_mean": 0.11818590015172958,
+    "t_std": 0.07241974025964737
+  },
+  {
+    "file": "frankfurt_000001_061682_leftImg8bit.png",
+    "t_mean": 0.11686857044696808,
+    "t_std": 0.07435353845357895
+  },
+  {
+    "file": "frankfurt_000001_061763_leftImg8bit.png",
+    "t_mean": 0.13810159265995026,
+    "t_std": 0.10794977098703384
+  },
+  {
+    "file": "frankfurt_000001_062016_leftImg8bit.png",
+    "t_mean": 0.1107800155878067,
+    "t_std": 0.07443589717149734
+  },
+  {
+    "file": "frankfurt_000001_062250_leftImg8bit.png",
+    "t_mean": 0.1113642230629921,
+    "t_std": 0.07286440581083298
+  },
+  {
+    "file": "frankfurt_000001_062396_leftImg8bit.png",
+    "t_mean": 0.11505655944347382,
+    "t_std": 0.06877068430185318
+  },
+  {
+    "file": "frankfurt_000001_062509_leftImg8bit.png",
+    "t_mean": 0.11540070176124573,
+    "t_std": 0.07727254927158356
+  },
+  {
+    "file": "frankfurt_000001_062653_leftImg8bit.png",
+    "t_mean": 0.11417535692453384,
+    "t_std": 0.07195621728897095
+  },
+  {
+    "file": "frankfurt_000001_062793_leftImg8bit.png",
+    "t_mean": 0.11141597479581833,
+    "t_std": 0.07151626795530319
+  },
+  {
+    "file": "frankfurt_000001_063045_leftImg8bit.png",
+    "t_mean": 0.11017747223377228,
+    "t_std": 0.0668332651257515
+  },
+  {
+    "file": "frankfurt_000001_064130_leftImg8bit.png",
+    "t_mean": 0.11336719989776611,
+    "t_std": 0.06634189933538437
+  },
+  {
+    "file": "frankfurt_000001_064305_leftImg8bit.png",
+    "t_mean": 0.0971432477235794,
+    "t_std": 0.054069679230451584
+  },
+  {
+    "file": "frankfurt_000001_064651_leftImg8bit.png",
+    "t_mean": 0.11831843107938766,
+    "t_std": 0.07115594297647476
+  },
+  {
+    "file": "frankfurt_000001_064798_leftImg8bit.png",
+    "t_mean": 0.10655394941568375,
+    "t_std": 0.05750720202922821
+  },
+  {
+    "file": "frankfurt_000001_064925_leftImg8bit.png",
+    "t_mean": 0.11414708942174911,
+    "t_std": 0.06549330055713654
+  },
+  {
+    "file": "frankfurt_000001_065160_leftImg8bit.png",
+    "t_mean": 0.11079812049865723,
+    "t_std": 0.05693693086504936
+  },
+  {
+    "file": "frankfurt_000001_065617_leftImg8bit.png",
+    "t_mean": 0.10165564715862274,
+    "t_std": 0.05770226940512657
+  },
+  {
+    "file": "frankfurt_000001_065850_leftImg8bit.png",
+    "t_mean": 0.09791752696037292,
+    "t_std": 0.05264533311128616
+  },
+  {
+    "file": "frankfurt_000001_066092_leftImg8bit.png",
+    "t_mean": 0.10944599658250809,
+    "t_std": 0.060855329036712646
+  },
+  {
+    "file": "frankfurt_000001_066438_leftImg8bit.png",
+    "t_mean": 0.08489187061786652,
+    "t_std": 0.03966175392270088
+  },
+  {
+    "file": "frankfurt_000001_066574_leftImg8bit.png",
+    "t_mean": 0.09441525489091873,
+    "t_std": 0.05101719871163368
+  },
+  {
+    "file": "frankfurt_000001_066832_leftImg8bit.png",
+    "t_mean": 0.10390448570251465,
+    "t_std": 0.054001905024051666
+  },
+  {
+    "file": "frankfurt_000001_067092_leftImg8bit.png",
+    "t_mean": 0.10969799011945724,
+    "t_std": 0.062429044395685196
+  },
+  {
+    "file": "frankfurt_000001_067178_leftImg8bit.png",
+    "t_mean": 0.11240530759096146,
+    "t_std": 0.06509912759065628
+  },
+  {
+    "file": "frankfurt_000001_067295_leftImg8bit.png",
+    "t_mean": 0.10683118551969528,
+    "t_std": 0.06170136481523514
+  },
+  {
+    "file": "frankfurt_000001_067474_leftImg8bit.png",
+    "t_mean": 0.09740681201219559,
+    "t_std": 0.04924604669213295
+  },
+  {
+    "file": "frankfurt_000001_067735_leftImg8bit.png",
+    "t_mean": 0.11703183501958847,
+    "t_std": 0.06091146543622017
+  },
+  {
+    "file": "frankfurt_000001_068063_leftImg8bit.png",
+    "t_mean": 0.10284435749053955,
+    "t_std": 0.0613182857632637
+  },
+  {
+    "file": "frankfurt_000001_068208_leftImg8bit.png",
+    "t_mean": 0.10760959982872009,
+    "t_std": 0.06545324623584747
+  },
+  {
+    "file": "frankfurt_000001_068682_leftImg8bit.png",
+    "t_mean": 0.1048760712146759,
+    "t_std": 0.06229043006896973
+  },
+  {
+    "file": "frankfurt_000001_068772_leftImg8bit.png",
+    "t_mean": 0.11203731596469879,
+    "t_std": 0.06090119853615761
+  },
+  {
+    "file": "frankfurt_000001_069633_leftImg8bit.png",
+    "t_mean": 0.10453929007053375,
+    "t_std": 0.0596899688243866
+  },
+  {
+    "file": "frankfurt_000001_070099_leftImg8bit.png",
+    "t_mean": 0.10388018190860748,
+    "t_std": 0.060320258140563965
+  },
+  {
+    "file": "frankfurt_000001_071288_leftImg8bit.png",
+    "t_mean": 0.1104733794927597,
+    "t_std": 0.06443269550800323
+  },
+  {
+    "file": "frankfurt_000001_071781_leftImg8bit.png",
+    "t_mean": 0.11767127364873886,
+    "t_std": 0.08201152086257935
+  },
+  {
+    "file": "frankfurt_000001_072155_leftImg8bit.png",
+    "t_mean": 0.10542591661214828,
+    "t_std": 0.06517581641674042
+  },
+  {
+    "file": "frankfurt_000001_072295_leftImg8bit.png",
+    "t_mean": 0.11724932491779327,
+    "t_std": 0.07282323390245438
+  },
+  {
+    "file": "frankfurt_000001_073088_leftImg8bit.png",
+    "t_mean": 0.09409845620393753,
+    "t_std": 0.045053593814373016
+  },
+  {
+    "file": "frankfurt_000001_073243_leftImg8bit.png",
+    "t_mean": 0.10342381149530411,
+    "t_std": 0.05517936870455742
+  },
+  {
+    "file": "frankfurt_000001_073464_leftImg8bit.png",
+    "t_mean": 0.11006300896406174,
+    "t_std": 0.0624128058552742
+  }
+]

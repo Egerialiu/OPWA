@@ -1,0 +1,83 @@
+{
+  "dataset": "foggy_cityscapes_beta0.02_indomain",
+  "method": "pscp",
+  "n_cal": 100,
+  "n_test": 400,
+  "seed": 42,
+  "alpha": 0.1,
+  "target_coverage": 0.9,
+  "q_hats": [
+    0.89812,
+    0.731304,
+    0.627537,
+    0.791748,
+    0.547415
+  ],
+  "bins": {
+    "bin0_t0.00_0.20": {
+      "pixel_count": 521100541,
+      "covered_count": 471551386,
+      "coverage_rate": 0.904914,
+      "gap": 0.0,
+      "mean_set_size": 1.423969,
+      "mean_score": 0.236047,
+      "empty_set_count": 0,
+      "empty_set_rate": 0.0,
+      "determinacy_count": 353200398,
+      "determinacy_rate": 0.677797
+    },
+    "bin1_t0.20_0.40": {
+      "pixel_count": 126964354,
+      "covered_count": 114652540,
+      "coverage_rate": 0.903029,
+      "gap": 0.0,
+      "mean_set_size": 1.065414,
+      "mean_score": 0.134851,
+      "empty_set_count": 104038,
+      "empty_set_rate": 0.000819,
+      "determinacy_count": 118556047,
+      "determinacy_rate": 0.933774
+    },
+    "bin2_t0.40_0.60": {
+      "pixel_count": 59341095,
+      "covered_count": 53914831,
+      "coverage_rate": 0.908558,
+      "gap": 0.0,
+      "mean_set_size": 1.010961,
+      "mean_score": 0.107481,
+      "empty_set_count": 377307,
+      "empty_set_rate": 0.006358,
+      "determinacy_count": 57936054,
+      "determinacy_rate": 0.976323
+    },
+    "bin3_t0.60_0.80": {
+      "pixel_count": 20695079,
+      "covered_count": 18617621,
+      "coverage_rate": 0.899616,
+      "gap": 0.000384,
+      "mean_set_size": 1.108152,
+      "mean_score": 0.147049,
+      "empty_set_count": 1061,
+      "empty_set_rate": 5.1e-05,
+      "determinacy_count": 18601139,
+      "determinacy_rate": 0.898819
+    },
+    "bin4_t0.80_1.00": {
+      "pixel_count": 3266013,
+      "covered_count": 2881970,
+      "coverage_rate": 0.882412,
+      "gap": 0.017588,
+      "mean_set_size": 0.98379,
+      "mean_score": 0.144217,
+      "empty_set_count": 62233,
+      "empty_set_rate": 0.019055,
+      "determinacy_count": 3194490,
+      "determinacy_rate": 0.978101
+    }
+  },
+  "overall_test_coverage": 0.904632,
+  "overall_determinacy_rate": 0.754051,
+  "max_gap": 0.017588,
+  "bin0_gap": 0.0,
+  "bin0_pixel_ratio": 0.712502
+}

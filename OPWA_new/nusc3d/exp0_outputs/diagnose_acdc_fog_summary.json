@@ -1,0 +1,11 @@
+{
+  "miou": 0.6113,
+  "score_mean": 0.1051,
+  "score_std": 0.2444,
+  "fraction_above_qhat": 0.0881,
+  "q_hat": 0.513809,
+  "bin0_gap": 0.0,
+  "overall_coverage": 0.9119,
+  "avg_gt_classes": 7.2,
+  "avg_pred_classes": 6.8
+}

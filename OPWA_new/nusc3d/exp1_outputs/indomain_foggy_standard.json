@@ -1,0 +1,77 @@
+{
+  "dataset": "foggy_cityscapes_beta0.02_indomain",
+  "method": "standard_cp",
+  "n_cal": 100,
+  "n_test": 400,
+  "seed": 42,
+  "alpha": 0.1,
+  "target_coverage": 0.9,
+  "q_hat": 0.872568,
+  "bins": {
+    "bin0_t0.00_0.20": {
+      "pixel_count": 521100541,
+      "covered_count": 466402439,
+      "coverage_rate": 0.895033,
+      "gap": 0.004967,
+      "mean_set_size": 1.35461,
+      "mean_score": 0.236047,
+      "empty_set_count": 81,
+      "empty_set_rate": 0.0,
+      "determinacy_count": 370884397,
+      "determinacy_rate": 0.711733
+    },
+    "bin1_t0.20_0.40": {
+      "pixel_count": 126964354,
+      "covered_count": 117810078,
+      "coverage_rate": 0.927899,
+      "gap": 0.0,
+      "mean_set_size": 1.179314,
+      "mean_score": 0.134851,
+      "empty_set_count": 0,
+      "empty_set_rate": 0.0,
+      "determinacy_count": 108740028,
+      "determinacy_rate": 0.856461
+    },
+    "bin2_t0.40_0.60": {
+      "pixel_count": 59341095,
+      "covered_count": 55669892,
+      "coverage_rate": 0.938134,
+      "gap": 0.0,
+      "mean_set_size": 1.136206,
+      "mean_score": 0.107481,
+      "empty_set_count": 0,
+      "empty_set_rate": 0.0,
+      "determinacy_count": 52840509,
+      "determinacy_rate": 0.890454
+    },
+    "bin3_t0.60_0.80": {
+      "pixel_count": 20695079,
+      "covered_count": 18903911,
+      "coverage_rate": 0.91345,
+      "gap": 0.0,
+      "mean_set_size": 1.185542,
+      "mean_score": 0.147049,
+      "empty_set_count": 0,
+      "empty_set_rate": 0.0,
+      "determinacy_count": 17588027,
+      "determinacy_rate": 0.849865
+    },
+    "bin4_t0.80_1.00": {
+      "pixel_count": 3266013,
+      "covered_count": 3051258,
+      "coverage_rate": 0.934246,
+      "gap": 0.0,
+      "mean_set_size": 1.175162,
+      "mean_score": 0.144217,
+      "empty_set_count": 0,
+      "empty_set_rate": 0.0,
+      "determinacy_count": 2772466,
+      "determinacy_rate": 0.848884
+    }
+  },
+  "overall_test_coverage": 0.904932,
+  "overall_determinacy_rate": 0.75588,
+  "max_gap": 0.004967,
+  "bin0_gap": 0.004967,
+  "bin0_pixel_ratio": 0.712502
+}

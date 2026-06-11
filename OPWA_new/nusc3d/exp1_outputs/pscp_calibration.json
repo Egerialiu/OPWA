@@ -1,0 +1,35 @@
+{
+  "method": "pscp",
+  "alpha": 0.1,
+  "target_coverage": 0.9,
+  "quantile": 0.9,
+  "global_q_hat_fallback": 0.513809,
+  "per_bin": {
+    "bin0_t0.00_0.20": {
+      "pixel_count": 395790037,
+      "q_hat": 0.569992,
+      "calibration_coverage": 0.9
+    },
+    "bin1_t0.20_0.40": {
+      "pixel_count": 52534319,
+      "q_hat": 0.256905,
+      "calibration_coverage": 0.968354
+    },
+    "bin2_t0.40_0.60": {
+      "pixel_count": 1017470,
+      "q_hat": 0.256905,
+      "calibration_coverage": 0.969711
+    },
+    "bin3_t0.60_0.80": {
+      "pixel_count": 39538,
+      "q_hat": 0.256905,
+      "calibration_coverage": 0.99823
+    },
+    "bin4_t0.80_1.00": {
+      "pixel_count": 0,
+      "q_hat": 0.513809,
+      "calibration_coverage": 0.0
+    }
+  },
+  "total_calibration_pixels": 449381364
+}

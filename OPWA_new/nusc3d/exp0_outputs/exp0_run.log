@@ -1,0 +1,132 @@
+2026-06-10 08:52:09,295 [INFO] Experiment 0 started at 2026-06-10 08:52:09.295240
+2026-06-10 08:52:09,295 [INFO] Device: cpu
+2026-06-10 08:52:09,295 [INFO] Output: /root/opwa_v3/exp0_outputs/
+2026-06-10 08:52:09,295 [INFO] ============================================================
+2026-06-10 08:52:09,295 [INFO] DRY RUN — Validating all code paths
+2026-06-10 08:52:09,295 [INFO] ============================================================
+2026-06-10 08:52:09,295 [INFO]   config.py: OK
+2026-06-10 08:52:09,300 [INFO]   data_utils.py: calibration=250, test=500
+2026-06-10 08:52:09,300 [INFO]   data_utils: GT mapping verified (10/10 exist)
+2026-06-10 08:52:20,007 [INFO] Experiment 0 started at 2026-06-10 08:52:20.007032
+2026-06-10 08:52:20,007 [INFO] Device: cpu
+2026-06-10 08:52:20,007 [INFO] Output: /root/opwa_v3/exp0_outputs/
+2026-06-10 08:52:20,007 [INFO] ============================================================
+2026-06-10 08:52:20,007 [INFO] DRY RUN — Validating all code paths
+2026-06-10 08:52:20,007 [INFO] ============================================================
+2026-06-10 08:52:20,007 [INFO]   config.py: OK
+2026-06-10 08:52:20,009 [INFO]   data_utils.py: calibration=250, test=500
+2026-06-10 08:52:20,009 [INFO]   data_utils: GT mapping verified (10/10 exist)
+2026-06-10 08:52:20,533 [INFO]   transmittance.py: t range [0.0498, 1.0000]
+2026-06-10 08:52:20,535 [INFO]   evaluation.py: OK (mock results computed)
+2026-06-10 08:52:20,536 [INFO]   decision_tree.py: OK (decision=significant)
+2026-06-10 08:53:20,459 [INFO]   visualization.py: 3 plots generated ✓
+2026-06-10 08:53:20,460 [INFO] ============================================================
+2026-06-10 08:53:20,460 [INFO] DRY RUN COMPLETE — All modules validated
+2026-06-10 08:53:20,460 [INFO] ============================================================
+2026-06-10 08:59:04,761 [INFO] Experiment 0 started at 2026-06-10 08:59:04.761907
+2026-06-10 08:59:04,762 [INFO] Device: cuda
+2026-06-10 08:59:04,762 [INFO] Output: /root/opwa_v3/exp0_outputs/
+2026-06-10 08:59:04,762 [INFO] ============================================================
+2026-06-10 08:59:04,762 [INFO] STEP 1: Model Loading Verification
+2026-06-10 08:59:04,762 [INFO] ============================================================
+2026-06-10 08:59:04,762 [INFO] Loading SegFormer-B0...
+2026-06-10 08:59:36,133 [INFO]   SegFormer loaded on cuda
+2026-06-10 08:59:36,134 [INFO]   Parameters: 3,719,027
+2026-06-10 08:59:36,135 [INFO]   Running SegFormer on 5 calibration images...
+2026-06-10 08:59:37,089 [INFO]     [1/5] frankfurt_000000_000294_leftImg8bit.png: pred shape=(1024, 2048), unique classes=11
+2026-06-10 08:59:37,199 [INFO]     [2/5] frankfurt_000000_000576_leftImg8bit.png: pred shape=(1024, 2048), unique classes=11
+2026-06-10 08:59:37,303 [INFO]     [3/5] frankfurt_000000_001016_leftImg8bit.png: pred shape=(1024, 2048), unique classes=12
+2026-06-10 08:59:37,406 [INFO]     [4/5] frankfurt_000000_001236_leftImg8bit.png: pred shape=(1024, 2048), unique classes=14
+2026-06-10 08:59:37,510 [INFO]     [5/5] frankfurt_000000_001751_leftImg8bit.png: pred shape=(1024, 2048), unique classes=10
+2026-06-10 08:59:37,510 [INFO]   SegFormer verification: OK (outputs have non-trivial class predictions)
+2026-06-10 08:59:37,510 [INFO] Loading Depth Anything V2 Small...
+2026-06-10 08:59:38,234 [INFO] using MLP layer as FFN
+2026-06-10 08:59:38,880 [INFO]   Depth Anything loaded on cuda
+2026-06-10 08:59:39,075 [INFO]   Depth direction check on frankfurt_000000_000294_leftImg8bit_foggy_beta_0.02.png:
+2026-06-10 08:59:39,075 [INFO]     Upper 1/3 (sky/far) depth mean: 1.4575
+2026-06-10 08:59:39,075 [INFO]     Lower 1/3 (ground/near) depth mean: 6.2709
+2026-06-10 08:59:39,075 [INFO]     → Disparity style confirmed (upper < lower). Will invert for t(x). ✓
+2026-06-10 08:59:39,075 [INFO] Step 1 complete. Waiting for confirmation before Step 2.
+2026-06-10 08:59:39,079 [INFO] 
+=== Step 1 Complete ===
+2026-06-10 08:59:39,079 [INFO] Status: SUCCESS (models loaded, SegFormer outputs non-trivial)
+2026-06-10 08:59:39,079 [INFO] Wait for instruction: YES — confirm before Step 2
+2026-06-10 09:01:23,732 [INFO] Experiment 0 started at 2026-06-10 09:01:23.732209
+2026-06-10 09:01:23,732 [INFO] Device: cuda
+2026-06-10 09:01:23,732 [INFO] Output: /root/opwa_v3/exp0_outputs/
+2026-06-10 09:01:24,763 [INFO] using MLP layer as FFN
+2026-06-10 09:01:26,087 [INFO] ============================================================
+2026-06-10 09:01:26,087 [INFO] STEP 2: Transmittance Direction Verification
+2026-06-10 09:01:26,087 [INFO] ============================================================
+2026-06-10 09:01:27,083 [INFO]   [1/5] frankfurt_000000_000294_leftImg8bit_foggy_beta_0.02.png:
+2026-06-10 09:01:27,084 [INFO]     t range: [0.0498, 1.0000]
+2026-06-10 09:01:27,084 [INFO]     Upper 1/3 mean t: 0.0869
+2026-06-10 09:01:27,084 [INFO]     Lower 1/3 mean t: 0.4564
+2026-06-10 09:01:27,084 [INFO]     → Transmittance direction CORRECT (far<near) ✓
+2026-06-10 09:01:27,201 [INFO]   [2/5] frankfurt_000000_000576_leftImg8bit_foggy_beta_0.02.png:
+2026-06-10 09:01:27,202 [INFO]     t range: [0.0498, 1.0000]
+2026-06-10 09:01:27,202 [INFO]     Upper 1/3 mean t: 0.0708
+2026-06-10 09:01:27,202 [INFO]     Lower 1/3 mean t: 0.4897
+2026-06-10 09:01:27,202 [INFO]     → Transmittance direction CORRECT (far<near) ✓
+2026-06-10 09:01:27,314 [INFO]   [3/5] frankfurt_000000_001016_leftImg8bit_foggy_beta_0.02.png:
+2026-06-10 09:01:27,315 [INFO]     t range: [0.0498, 1.0000]
+2026-06-10 09:01:27,315 [INFO]     Upper 1/3 mean t: 0.0552
+2026-06-10 09:01:27,315 [INFO]     Lower 1/3 mean t: 0.4025
+2026-06-10 09:01:27,315 [INFO]     → Transmittance direction CORRECT (far<near) ✓
+2026-06-10 09:01:27,430 [INFO]   [4/5] frankfurt_000000_001236_leftImg8bit_foggy_beta_0.02.png:
+2026-06-10 09:01:27,430 [INFO]     t range: [0.0498, 1.0000]
+2026-06-10 09:01:27,431 [INFO]     Upper 1/3 mean t: 0.0864
+2026-06-10 09:01:27,431 [INFO]     Lower 1/3 mean t: 0.4465
+2026-06-10 09:01:27,431 [INFO]     → Transmittance direction CORRECT (far<near) ✓
+2026-06-10 09:01:27,544 [INFO]   [5/5] frankfurt_000000_001751_leftImg8bit_foggy_beta_0.02.png:
+2026-06-10 09:01:27,545 [INFO]     t range: [0.0498, 1.0000]
+2026-06-10 09:01:27,545 [INFO]     Upper 1/3 mean t: 0.0903
+2026-06-10 09:01:27,545 [INFO]     Lower 1/3 mean t: 0.5169
+2026-06-10 09:01:27,545 [INFO]     → Transmittance direction CORRECT (far<near) ✓
+2026-06-10 09:01:31,983 [INFO] Step 2 complete. Waiting for confirmation before Step 3.
+2026-06-10 09:01:31,983 [INFO] 
+=== Step 2 Complete ===
+2026-06-10 09:01:31,983 [INFO] Status: SUCCESS (transmittance_vis.png saved)
+2026-06-10 09:01:31,983 [INFO] Wait for instruction: YES — confirm before Step 3
+2026-06-10 09:01:40,342 [INFO] Experiment 0 started at 2026-06-10 09:01:40.342102
+2026-06-10 09:01:40,342 [INFO] Device: cuda
+2026-06-10 09:01:40,342 [INFO] Output: /root/opwa_v3/exp0_outputs/
+2026-06-10 09:01:40,342 [INFO] ============================================================
+2026-06-10 09:01:40,342 [INFO] STEP 3: CP Calibration
+2026-06-10 09:01:40,342 [INFO] ============================================================
+2026-06-10 09:02:41,842 [INFO] Experiment 0 started at 2026-06-10 09:02:41.842474
+2026-06-10 09:02:41,842 [INFO] Device: cuda
+2026-06-10 09:02:41,842 [INFO] Output: /root/opwa_v3/exp0_outputs/
+2026-06-10 09:02:41,842 [INFO] ============================================================
+2026-06-10 09:02:41,842 [INFO] STEP 3: CP Calibration
+2026-06-10 09:02:41,842 [INFO] ============================================================
+2026-06-10 09:04:26,762 [INFO] Experiment 0 started at 2026-06-10 09:04:26.762735
+2026-06-10 09:04:26,762 [INFO] Device: cuda
+2026-06-10 09:04:26,763 [INFO] Output: /root/opwa_v3/exp0_outputs/
+2026-06-10 09:04:26,763 [INFO] ============================================================
+2026-06-10 09:04:26,763 [INFO] STEP 3: CP Calibration
+2026-06-10 09:04:26,763 [INFO] ============================================================
+2026-06-10 09:06:26,154 [INFO]   q_hat = 0.513809
+2026-06-10 09:06:26,154 [INFO]   Calibration coverage = 0.900000
+2026-06-10 09:06:26,154 [INFO]   Calibration pixels = 449,381,364
+2026-06-10 09:06:26,154 [INFO]   Calibration coverage in [0.88, 0.92] ✓
+2026-06-10 09:06:26,155 [INFO] Step 3 complete. Waiting for confirmation before Step 4.
+2026-06-10 09:06:26,155 [INFO] 
+=== Step 3 Complete ===
+2026-06-10 09:06:26,155 [INFO] Status: SUCCESS (q_hat=0.513809, cal_cov=0.9000)
+2026-06-10 09:06:26,155 [INFO] Wait for instruction: YES — confirm before Step 4
+2026-06-10 09:06:35,596 [INFO] Experiment 0 started at 2026-06-10 09:06:35.596031
+2026-06-10 09:06:35,596 [INFO] Device: cuda
+2026-06-10 09:06:35,596 [INFO] Output: /root/opwa_v3/exp0_outputs/
+2026-06-10 09:08:34,365 [INFO] ============================================================
+2026-06-10 09:08:34,365 [INFO] STEP 4: Full Test Evaluation (500 foggy images)
+2026-06-10 09:08:34,365 [INFO] ============================================================
+2026-06-10 09:09:05,127 [INFO] using MLP layer as FFN
+2026-06-10 09:13:47,941 [INFO] ============================================================
+2026-06-10 09:13:47,941 [INFO] EXPERIMENT 0 COMPLETE
+2026-06-10 09:13:47,941 [INFO] Decision: weak
+2026-06-10 09:13:47,941 [INFO] ============================================================
+2026-06-10 09:13:47,942 [INFO] 
+=== Step 4 Complete ===
+2026-06-10 09:13:47,942 [INFO] Decision: weak
+2026-06-10 09:13:47,942 [INFO] Wait for instruction: YES — decision tree triggered

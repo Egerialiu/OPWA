@@ -1,0 +1,172 @@
+{
+  "n_images": 20,
+  "total_valid_pixels": 39087208,
+  "overall_coverage": 0.914674,
+  "gap": 0.0,
+  "target_coverage": 0.9,
+  "mean_score": 0.098394,
+  "empty_set_rate": 0.016154,
+  "q_hat": 0.513809,
+  "per_image": [
+    {
+      "filename": "GOPR0476_frame_000761_rgb_anon.png",
+      "valid_pixels": 1897889,
+      "covered_count": 1833220,
+      "coverage_rate": 0.965926,
+      "mean_score": 0.03896,
+      "fog_score": 0.5165766168200682
+    },
+    {
+      "filename": "GP010476_frame_000199_rgb_anon.png",
+      "valid_pixels": 1945111,
+      "covered_count": 1737479,
+      "coverage_rate": 0.893254,
+      "mean_score": 0.113056,
+      "fog_score": 0.48381522328856236
+    },
+    {
+      "filename": "GOPR0476_frame_000798_rgb_anon.png",
+      "valid_pixels": 2030448,
+      "covered_count": 1921771,
+      "coverage_rate": 0.946476,
+      "mean_score": 0.073797,
+      "fog_score": 0.47992681440440266
+    },
+    {
+      "filename": "GOPR0476_frame_000982_rgb_anon.png",
+      "valid_pixels": 1909974,
+      "covered_count": 1780022,
+      "coverage_rate": 0.931961,
+      "mean_score": 0.083365,
+      "fog_score": 0.46783140301704407
+    },
+    {
+      "filename": "GP010476_frame_000255_rgb_anon.png",
+      "valid_pixels": 1822237,
+      "covered_count": 1651764,
+      "coverage_rate": 0.906449,
+      "mean_score": 0.100682,
+      "fog_score": 0.45820724048018036
+    },
+    {
+      "filename": "GP010476_frame_000058_rgb_anon.png",
+      "valid_pixels": 1977519,
+      "covered_count": 1892858,
+      "coverage_rate": 0.957188,
+      "mean_score": 0.0583,
+      "fog_score": 0.4346008158687416
+    },
+    {
+      "filename": "GP010476_frame_000142_rgb_anon.png",
+      "valid_pixels": 1926669,
+      "covered_count": 1605520,
+      "coverage_rate": 0.833314,
+      "mean_score": 0.168612,
+      "fog_score": 0.42578752152384963
+    },
+    {
+      "filename": "GOPR0476_frame_001033_rgb_anon.png",
+      "valid_pixels": 1960124,
+      "covered_count": 1791683,
+      "coverage_rate": 0.914066,
+      "mean_score": 0.101154,
+      "fog_score": 0.4204368176292598
+    },
+    {
+      "filename": "GOPR0476_frame_001002_rgb_anon.png",
+      "valid_pixels": 2011004,
+      "covered_count": 1645958,
+      "coverage_rate": 0.818476,
+      "mean_score": 0.197879,
+      "fog_score": 0.4196827590388393
+    },
+    {
+      "filename": "GP010476_frame_000137_rgb_anon.png",
+      "valid_pixels": 1994672,
+      "covered_count": 1831825,
+      "coverage_rate": 0.918359,
+      "mean_score": 0.100496,
+      "fog_score": 0.41525381202838146
+    },
+    {
+      "filename": "GP010476_frame_000242_rgb_anon.png",
+      "valid_pixels": 1736475,
+      "covered_count": 1578873,
+      "coverage_rate": 0.90924,
+      "mean_score": 0.095875,
+      "fog_score": 0.40563615432846545
+    },
+    {
+      "filename": "GP010476_frame_000018_rgb_anon.png",
+      "valid_pixels": 1983074,
+      "covered_count": 1832089,
+      "coverage_rate": 0.923863,
+      "mean_score": 0.086438,
+      "fog_score": 0.38087885893452594
+    },
+    {
+      "filename": "GOPR0476_frame_000931_rgb_anon.png",
+      "valid_pixels": 1957993,
+      "covered_count": 1844354,
+      "coverage_rate": 0.941961,
+      "mean_score": 0.071569,
+      "fog_score": 0.38064220271196453
+    },
+    {
+      "filename": "GP010476_frame_000010_rgb_anon.png",
+      "valid_pixels": 2014791,
+      "covered_count": 1868732,
+      "coverage_rate": 0.927507,
+      "mean_score": 0.085943,
+      "fog_score": 0.38029709260857264
+    },
+    {
+      "filename": "GP010476_frame_000068_rgb_anon.png",
+      "valid_pixels": 2002121,
+      "covered_count": 1913997,
+      "coverage_rate": 0.955985,
+      "mean_score": 0.060248,
+      "fog_score": 0.3799250873411188
+    },
+    {
+      "filename": "GOPR0476_frame_000948_rgb_anon.png",
+      "valid_pixels": 2013882,
+      "covered_count": 1869161,
+      "coverage_rate": 0.928138,
+      "mean_score": 0.087686,
+      "fog_score": 0.37196525690622034
+    },
+    {
+      "filename": "GOPR0476_frame_001039_rgb_anon.png",
+      "valid_pixels": 1964460,
+      "covered_count": 1861382,
+      "coverage_rate": 0.947529,
+      "mean_score": 0.060378,
+      "fog_score": 0.3652688243948457
+    },
+    {
+      "filename": "GP010476_frame_000063_rgb_anon.png",
+      "valid_pixels": 1975287,
+      "covered_count": 1794000,
+      "coverage_rate": 0.908222,
+      "mean_score": 0.107641,
+      "fog_score": 0.35892901280804695
+    },
+    {
+      "filename": "GP010476_frame_000125_rgb_anon.png",
+      "valid_pixels": 1950128,
+      "covered_count": 1751908,
+      "coverage_rate": 0.898355,
+      "mean_score": 0.131849,
+      "fog_score": 0.35342356384350165
+    },
+    {
+      "filename": "GOPR0476_frame_000781_rgb_anon.png",
+      "valid_pixels": 2013350,
+      "covered_count": 1745454,
+      "coverage_rate": 0.86694,
+      "mean_score": 0.142048,
+      "fog_score": 0.35277354580642967
+    }
+  ]
+}

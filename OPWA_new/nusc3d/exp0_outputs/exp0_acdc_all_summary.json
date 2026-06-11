@@ -1,0 +1,546 @@
+{
+  "conditions": {
+    "night": {
+      "fixed": {
+        "dataset": "acdc_night_val",
+        "calibration_source": "cityscapes_clear_val_250",
+        "alpha": 0.1,
+        "q_hat": 0.513809,
+        "bins": {
+          "bin0_t0.00_0.20": {
+            "pixel_count": 148084501,
+            "covered_count": 78961502,
+            "coverage_rate": 0.533219,
+            "gap": 0.366781,
+            "mean_set_size": 0.95467,
+            "mean_score": 0.476671,
+            "empty_set_count": 7165039,
+            "empty_set_rate": 0.048385
+          },
+          "bin1_t0.20_0.40": {
+            "pixel_count": 26565558,
+            "covered_count": 19192261,
+            "coverage_rate": 0.722449,
+            "gap": 0.177551,
+            "mean_set_size": 0.97646,
+            "mean_score": 0.280247,
+            "empty_set_count": 671985,
+            "empty_set_rate": 0.025295
+          },
+          "bin2_t0.40_0.60": {
+            "pixel_count": 14333536,
+            "covered_count": 11183011,
+            "coverage_rate": 0.780199,
+            "gap": 0.119801,
+            "mean_set_size": 0.987372,
+            "mean_score": 0.228737,
+            "empty_set_count": 208222,
+            "empty_set_rate": 0.014527
+          },
+          "bin3_t0.60_0.80": {
+            "pixel_count": 9330838,
+            "covered_count": 7458909,
+            "coverage_rate": 0.799383,
+            "gap": 0.100617,
+            "mean_set_size": 0.985232,
+            "mean_score": 0.213331,
+            "empty_set_count": 156979,
+            "empty_set_rate": 0.016824
+          },
+          "bin4_t0.80_1.00": {
+            "pixel_count": 4120793,
+            "covered_count": 3346152,
+            "coverage_rate": 0.812017,
+            "gap": 0.087983,
+            "mean_set_size": 0.984174,
+            "mean_score": 0.206267,
+            "empty_set_count": 75676,
+            "empty_set_rate": 0.018364
+          }
+        },
+        "overall_test_coverage": 0.593483,
+        "max_gap": 0.366781,
+        "bin0_gap": 0.366781,
+        "bin0_pixel_ratio": 0.731515
+      },
+      "quantile": {
+        "dataset": "acdc_night_val",
+        "calibration_source": "cityscapes_clear_val_250",
+        "alpha": 0.1,
+        "q_hat": 0.513809,
+        "bin_strategy": "quantile",
+        "quantile_edges": [
+          0.0,
+          0.05723,
+          0.081646,
+          0.125074,
+          0.283306,
+          1.01
+        ],
+        "bins": {
+          "qtile0_t0.00_0.0572": {
+            "pixel_count": 40487205,
+            "covered_count": 4037703,
+            "coverage_rate": 0.099728,
+            "gap": 0.800272,
+            "mean_set_size": 0.977579,
+            "mean_score": 0.895804,
+            "empty_set_count": 1101109,
+            "empty_set_rate": 0.027196
+          },
+          "qtile1_t0.0572_0.0816": {
+            "pixel_count": 40488128,
+            "covered_count": 25682186,
+            "coverage_rate": 0.634314,
+            "gap": 0.265686,
+            "mean_set_size": 0.927298,
+            "mean_score": 0.383764,
+            "empty_set_count": 3068289,
+            "empty_set_rate": 0.075782
+          },
+          "qtile2_t0.0816_0.1251": {
+            "pixel_count": 40482527,
+            "covered_count": 29756734,
+            "coverage_rate": 0.735051,
+            "gap": 0.164949,
+            "mean_set_size": 0.95038,
+            "mean_score": 0.280161,
+            "empty_set_count": 2090758,
+            "empty_set_rate": 0.051646
+          },
+          "qtile3_t0.1251_0.2833": {
+            "pixel_count": 40493633,
+            "covered_count": 29318593,
+            "coverage_rate": 0.72403,
+            "gap": 0.17597,
+            "mean_set_size": 0.969979,
+            "mean_score": 0.283594,
+            "empty_set_count": 1293192,
+            "empty_set_rate": 0.031936
+          },
+          "qtile4_t0.2833_1.00": {
+            "pixel_count": 40483733,
+            "covered_count": 31346619,
+            "coverage_rate": 0.774302,
+            "gap": 0.125698,
+            "mean_set_size": 0.984036,
+            "mean_score": 0.235151,
+            "empty_set_count": 724553,
+            "empty_set_rate": 0.017897
+          }
+        },
+        "overall_test_coverage": 0.593483,
+        "max_gap": 0.800272,
+        "bin0_gap": 0.800272,
+        "bin0_pixel_ratio": 0.200001
+      }
+    },
+    "rain": {
+      "fixed": {
+        "dataset": "acdc_rain_val",
+        "calibration_source": "cityscapes_clear_val_250",
+        "alpha": 0.1,
+        "q_hat": 0.513809,
+        "bins": {
+          "bin0_t0.00_0.20": {
+            "pixel_count": 164843932,
+            "covered_count": 144438847,
+            "coverage_rate": 0.876216,
+            "gap": 0.023784,
+            "mean_set_size": 0.971832,
+            "mean_score": 0.140575,
+            "empty_set_count": 4858791,
+            "empty_set_rate": 0.029475
+          },
+          "bin1_t0.20_0.40": {
+            "pixel_count": 20663761,
+            "covered_count": 14755634,
+            "coverage_rate": 0.714083,
+            "gap": 0.185917,
+            "mean_set_size": 0.949328,
+            "mean_score": 0.296638,
+            "empty_set_count": 1075618,
+            "empty_set_rate": 0.052053
+          },
+          "bin2_t0.40_0.60": {
+            "pixel_count": 7422974,
+            "covered_count": 5488156,
+            "coverage_rate": 0.739347,
+            "gap": 0.160653,
+            "mean_set_size": 0.95471,
+            "mean_score": 0.272782,
+            "empty_set_count": 348998,
+            "empty_set_rate": 0.047016
+          },
+          "bin3_t0.60_0.80": {
+            "pixel_count": 2885642,
+            "covered_count": 2208033,
+            "coverage_rate": 0.765179,
+            "gap": 0.134821,
+            "mean_set_size": 0.962259,
+            "mean_score": 0.25576,
+            "empty_set_count": 115957,
+            "empty_set_rate": 0.040184
+          },
+          "bin4_t0.80_1.00": {
+            "pixel_count": 663110,
+            "covered_count": 480224,
+            "coverage_rate": 0.7242,
+            "gap": 0.1758,
+            "mean_set_size": 0.948401,
+            "mean_score": 0.296671,
+            "empty_set_count": 36244,
+            "empty_set_rate": 0.054658
+          }
+        },
+        "overall_test_coverage": 0.851849,
+        "max_gap": 0.185917,
+        "bin0_gap": 0.023784,
+        "bin0_pixel_ratio": 0.838988
+      },
+      "quantile": {
+        "dataset": "acdc_rain_val",
+        "calibration_source": "cityscapes_clear_val_250",
+        "alpha": 0.1,
+        "q_hat": 0.513809,
+        "bin_strategy": "quantile",
+        "quantile_edges": [
+          0.0,
+          0.049787,
+          0.061576,
+          0.091187,
+          0.168568,
+          1.01
+        ],
+        "bins": {
+          "qtile0_t0.00_0.0498": {
+            "pixel_count": 0,
+            "covered_count": 0,
+            "coverage_rate": 0.0,
+            "gap": 0.9,
+            "mean_set_size": 0.0,
+            "mean_score": 0.0,
+            "empty_set_count": 0,
+            "empty_set_rate": 0.0
+          },
+          "qtile1_t0.0498_0.0616": {
+            "pixel_count": 78588167,
+            "covered_count": 74561323,
+            "coverage_rate": 0.94876,
+            "gap": 0.0,
+            "mean_set_size": 0.989792,
+            "mean_score": 0.067529,
+            "empty_set_count": 892841,
+            "empty_set_rate": 0.011361
+          },
+          "qtile2_t0.0616_0.0912": {
+            "pixel_count": 39281396,
+            "covered_count": 32796425,
+            "coverage_rate": 0.83491,
+            "gap": 0.06509,
+            "mean_set_size": 0.948374,
+            "mean_score": 0.186617,
+            "empty_set_count": 2083132,
+            "empty_set_rate": 0.053031
+          },
+          "qtile3_t0.0912_0.1686": {
+            "pixel_count": 39310556,
+            "covered_count": 31311463,
+            "coverage_rate": 0.796515,
+            "gap": 0.103485,
+            "mean_set_size": 0.962376,
+            "mean_score": 0.217508,
+            "empty_set_count": 1534476,
+            "empty_set_rate": 0.039035
+          },
+          "qtile4_t0.1686_1.00": {
+            "pixel_count": 39299300,
+            "covered_count": 28701683,
+            "coverage_rate": 0.730336,
+            "gap": 0.169664,
+            "mean_set_size": 0.952657,
+            "mean_score": 0.281792,
+            "empty_set_count": 1925159,
+            "empty_set_rate": 0.048987
+          }
+        },
+        "overall_test_coverage": 0.851849,
+        "max_gap": 0.9,
+        "bin0_gap": 0.9,
+        "bin0_pixel_ratio": 0.0
+      }
+    },
+    "snow": {
+      "fixed": {
+        "dataset": "acdc_snow_val",
+        "calibration_source": "cityscapes_clear_val_250",
+        "alpha": 0.1,
+        "q_hat": 0.513809,
+        "bins": {
+          "bin0_t0.00_0.20": {
+            "pixel_count": 168905644,
+            "covered_count": 142148169,
+            "coverage_rate": 0.841583,
+            "gap": 0.058417,
+            "mean_set_size": 0.975333,
+            "mean_score": 0.176183,
+            "empty_set_count": 4460219,
+            "empty_set_rate": 0.026407
+          },
+          "bin1_t0.20_0.40": {
+            "pixel_count": 15918478,
+            "covered_count": 11351212,
+            "coverage_rate": 0.713084,
+            "gap": 0.186916,
+            "mean_set_size": 0.950724,
+            "mean_score": 0.296225,
+            "empty_set_count": 811023,
+            "empty_set_rate": 0.050949
+          },
+          "bin2_t0.40_0.60": {
+            "pixel_count": 6765811,
+            "covered_count": 4676267,
+            "coverage_rate": 0.691161,
+            "gap": 0.208839,
+            "mean_set_size": 0.948503,
+            "mean_score": 0.321435,
+            "empty_set_count": 355861,
+            "empty_set_rate": 0.052597
+          },
+          "bin3_t0.60_0.80": {
+            "pixel_count": 3126279,
+            "covered_count": 2210461,
+            "coverage_rate": 0.707058,
+            "gap": 0.192942,
+            "mean_set_size": 0.954873,
+            "mean_score": 0.30919,
+            "empty_set_count": 144838,
+            "empty_set_rate": 0.046329
+          },
+          "bin4_t0.80_1.00": {
+            "pixel_count": 927153,
+            "covered_count": 590612,
+            "coverage_rate": 0.637017,
+            "gap": 0.262983,
+            "mean_set_size": 0.942422,
+            "mean_score": 0.378889,
+            "empty_set_count": 55490,
+            "empty_set_rate": 0.05985
+          }
+        },
+        "overall_test_coverage": 0.822807,
+        "max_gap": 0.262983,
+        "bin0_gap": 0.058417,
+        "bin0_pixel_ratio": 0.863334
+      },
+      "quantile": {
+        "dataset": "acdc_snow_val",
+        "calibration_source": "cityscapes_clear_val_250",
+        "alpha": 0.1,
+        "q_hat": 0.513809,
+        "bin_strategy": "quantile",
+        "quantile_edges": [
+          0.0,
+          0.049787,
+          0.060152,
+          0.081345,
+          0.14686,
+          1.01
+        ],
+        "bins": {
+          "qtile0_t0.00_0.0498": {
+            "pixel_count": 0,
+            "covered_count": 0,
+            "coverage_rate": 0.0,
+            "gap": 0.9,
+            "mean_set_size": 0.0,
+            "mean_score": 0.0,
+            "empty_set_count": 0,
+            "empty_set_rate": 0.0
+          },
+          "qtile1_t0.0498_0.0602": {
+            "pixel_count": 78217264,
+            "covered_count": 70856681,
+            "coverage_rate": 0.905896,
+            "gap": 0.0,
+            "mean_set_size": 0.987553,
+            "mean_score": 0.115195,
+            "empty_set_count": 1103173,
+            "empty_set_rate": 0.014104
+          },
+          "qtile2_t0.0602_0.0813": {
+            "pixel_count": 39123999,
+            "covered_count": 32102438,
+            "coverage_rate": 0.820531,
+            "gap": 0.079469,
+            "mean_set_size": 0.965802,
+            "mean_score": 0.198719,
+            "empty_set_count": 1407184,
+            "empty_set_rate": 0.035967
+          },
+          "qtile3_t0.0813_0.1469": {
+            "pixel_count": 39153069,
+            "covered_count": 30259031,
+            "coverage_rate": 0.772839,
+            "gap": 0.127161,
+            "mean_set_size": 0.963486,
+            "mean_score": 0.239645,
+            "empty_set_count": 1500281,
+            "empty_set_rate": 0.038318
+          },
+          "qtile4_t0.1469_1.00": {
+            "pixel_count": 39149033,
+            "covered_count": 27758571,
+            "coverage_rate": 0.709049,
+            "gap": 0.190951,
+            "mean_set_size": 0.955236,
+            "mean_score": 0.30138,
+            "empty_set_count": 1816793,
+            "empty_set_rate": 0.046407
+          }
+        },
+        "overall_test_coverage": 0.822807,
+        "max_gap": 0.9,
+        "bin0_gap": 0.9,
+        "bin0_pixel_ratio": 0.0
+      }
+    },
+    "foggy_cityscapes": {
+      "fixed": {
+        "dataset": "foggy_cityscapes_beta0.02",
+        "alpha": 0.1,
+        "q_hat": 0.513809,
+        "calibration_pixel_count": 449381364,
+        "calibration_coverage": 0.9,
+        "bins": {
+          "bin0_t0.00_0.20": {
+            "pixel_count": 652297028,
+            "covered_count": 511240616,
+            "coverage_rate": 0.783754,
+            "gap": 0.116246,
+            "mean_set_size": 0.941567,
+            "mean_score": 0.239131,
+            "empty_set_count": 39206420,
+            "empty_set_rate": 0.060105
+          },
+          "bin1_t0.20_0.40": {
+            "pixel_count": 158757079,
+            "covered_count": 138232123,
+            "coverage_rate": 0.870715,
+            "gap": 0.029285,
+            "mean_set_size": 0.968819,
+            "mean_score": 0.135779,
+            "empty_set_count": 5047026,
+            "empty_set_rate": 0.031791
+          },
+          "bin2_t0.40_0.60": {
+            "pixel_count": 75111829,
+            "covered_count": 67289756,
+            "coverage_rate": 0.895861,
+            "gap": 0.004139,
+            "mean_set_size": 0.978006,
+            "mean_score": 0.110159,
+            "empty_set_count": 1691753,
+            "empty_set_rate": 0.022523
+          },
+          "bin3_t0.60_0.80": {
+            "pixel_count": 26583931,
+            "covered_count": 22973845,
+            "coverage_rate": 0.8642,
+            "gap": 0.0358,
+            "mean_set_size": 0.96591,
+            "mean_score": 0.147453,
+            "empty_set_count": 921365,
+            "empty_set_rate": 0.034659
+          },
+          "bin4_t0.80_1.00": {
+            "pixel_count": 4268622,
+            "covered_count": 3765016,
+            "coverage_rate": 0.882021,
+            "gap": 0.017979,
+            "mean_set_size": 0.971771,
+            "mean_score": 0.140312,
+            "empty_set_count": 121829,
+            "empty_set_rate": 0.028541
+          }
+        },
+        "overall_test_coverage": 0.810781,
+        "max_gap": 0.116246,
+        "bin0_gap": 0.116246,
+        "bin0_pixel_ratio": 0.711324
+      },
+      "quantile": {
+        "dataset": "foggy_cityscapes_beta0.02",
+        "alpha": 0.1,
+        "q_hat": 0.513809,
+        "bin_strategy": "quantile",
+        "quantile_edges": [
+          0.0,
+          0.062207,
+          0.08218,
+          0.13541,
+          0.280898,
+          1.01
+        ],
+        "calibration_pixel_count": 449381364,
+        "calibration_coverage": 0.9,
+        "bins": {
+          "qtile0_t0.00_0.0622": {
+            "pixel_count": 183444537,
+            "covered_count": 137742155,
+            "coverage_rate": 0.750865,
+            "gap": 0.149135,
+            "mean_set_size": 0.943653,
+            "mean_score": 0.277161,
+            "empty_set_count": 10753476,
+            "empty_set_rate": 0.05862
+          },
+          "qtile1_t0.0622_0.0822": {
+            "pixel_count": 183382900,
+            "covered_count": 146529304,
+            "coverage_rate": 0.799035,
+            "gap": 0.100965,
+            "mean_set_size": 0.934205,
+            "mean_score": 0.227771,
+            "empty_set_count": 12364472,
+            "empty_set_rate": 0.067424
+          },
+          "qtile2_t0.0822_0.1354": {
+            "pixel_count": 183412964,
+            "covered_count": 143876300,
+            "coverage_rate": 0.784439,
+            "gap": 0.115561,
+            "mean_set_size": 0.940237,
+            "mean_score": 0.236897,
+            "empty_set_count": 11226095,
+            "empty_set_rate": 0.061207
+          },
+          "qtile3_t0.1354_0.2809": {
+            "pixel_count": 183383536,
+            "covered_count": 152192350,
+            "coverage_rate": 0.829913,
+            "gap": 0.070087,
+            "mean_set_size": 0.957329,
+            "mean_score": 0.178165,
+            "empty_set_count": 7992265,
+            "empty_set_rate": 0.043582
+          },
+          "qtile4_t0.2809_1.00": {
+            "pixel_count": 183394552,
+            "covered_count": 163161153,
+            "coverage_rate": 0.889673,
+            "gap": 0.010327,
+            "mean_set_size": 0.975158,
+            "mean_score": 0.117767,
+            "empty_set_count": 4652085,
+            "empty_set_rate": 0.025367
+          }
+        },
+        "overall_test_coverage": 0.810781,
+        "max_gap": 0.149135,
+        "bin0_gap": 0.149135,
+        "bin0_pixel_ratio": 0.200045
+      }
+    }
+  }
+}

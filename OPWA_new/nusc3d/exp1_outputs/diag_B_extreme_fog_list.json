@@ -1,0 +1,651 @@
+{
+  "total_images": 100,
+  "n_extreme": 20,
+  "selection_method": "fog_score = DCP_mean * (1 - contrast_std_norm)",
+  "top20_files": [
+    "GOPR0476_frame_000761_rgb_anon.png",
+    "GP010476_frame_000199_rgb_anon.png",
+    "GOPR0476_frame_000798_rgb_anon.png",
+    "GOPR0476_frame_000982_rgb_anon.png",
+    "GP010476_frame_000255_rgb_anon.png",
+    "GP010476_frame_000058_rgb_anon.png",
+    "GP010476_frame_000142_rgb_anon.png",
+    "GOPR0476_frame_001033_rgb_anon.png",
+    "GOPR0476_frame_001002_rgb_anon.png",
+    "GP010476_frame_000137_rgb_anon.png",
+    "GP010476_frame_000242_rgb_anon.png",
+    "GP010476_frame_000018_rgb_anon.png",
+    "GOPR0476_frame_000931_rgb_anon.png",
+    "GP010476_frame_000010_rgb_anon.png",
+    "GP010476_frame_000068_rgb_anon.png",
+    "GOPR0476_frame_000948_rgb_anon.png",
+    "GOPR0476_frame_001039_rgb_anon.png",
+    "GP010476_frame_000063_rgb_anon.png",
+    "GP010476_frame_000125_rgb_anon.png",
+    "GOPR0476_frame_000781_rgb_anon.png"
+  ],
+  "fog_scores": [
+    0.516577,
+    0.483815,
+    0.479927,
+    0.467831,
+    0.458207,
+    0.434601,
+    0.425788,
+    0.420437,
+    0.419683,
+    0.415254,
+    0.405636,
+    0.380879,
+    0.380642,
+    0.380297,
+    0.379925,
+    0.371965,
+    0.365269,
+    0.358929,
+    0.353424,
+    0.352774
+  ],
+  "all_scores": [
+    {
+      "filename": "GOPR0476_frame_000761_rgb_anon.png",
+      "dcp_mean": 0.549652,
+      "contrast_std": 0.21786,
+      "fog_score": 0.516577
+    },
+    {
+      "filename": "GP010476_frame_000199_rgb_anon.png",
+      "dcp_mean": 0.497442,
+      "contrast_std": 0.214156,
+      "fog_score": 0.483815
+    },
+    {
+      "filename": "GOPR0476_frame_000798_rgb_anon.png",
+      "dcp_mean": 0.50652,
+      "contrast_std": 0.216993,
+      "fog_score": 0.479927
+    },
+    {
+      "filename": "GOPR0476_frame_000982_rgb_anon.png",
+      "dcp_mean": 0.467831,
+      "contrast_std": 0.211061,
+      "fog_score": 0.467831
+    },
+    {
+      "filename": "GP010476_frame_000255_rgb_anon.png",
+      "dcp_mean": 0.513367,
+      "contrast_std": 0.223201,
+      "fog_score": 0.458207
+    },
+    {
+      "filename": "GP010476_frame_000058_rgb_anon.png",
+      "dcp_mean": 0.444252,
+      "contrast_std": 0.213516,
+      "fog_score": 0.434601
+    },
+    {
+      "filename": "GP010476_frame_000142_rgb_anon.png",
+      "dcp_mean": 0.45604,
+      "contrast_std": 0.218557,
+      "fog_score": 0.425788
+    },
+    {
+      "filename": "GOPR0476_frame_001033_rgb_anon.png",
+      "dcp_mean": 0.485919,
+      "contrast_std": 0.226287,
+      "fog_score": 0.420437
+    },
+    {
+      "filename": "GOPR0476_frame_001002_rgb_anon.png",
+      "dcp_mean": 0.430232,
+      "contrast_std": 0.213832,
+      "fog_score": 0.419683
+    },
+    {
+      "filename": "GP010476_frame_000137_rgb_anon.png",
+      "dcp_mean": 0.453529,
+      "contrast_std": 0.220597,
+      "fog_score": 0.415254
+    },
+    {
+      "filename": "GP010476_frame_000242_rgb_anon.png",
+      "dcp_mean": 0.481791,
+      "contrast_std": 0.228921,
+      "fog_score": 0.405636
+    },
+    {
+      "filename": "GP010476_frame_000018_rgb_anon.png",
+      "dcp_mean": 0.455244,
+      "contrast_std": 0.229518,
+      "fog_score": 0.380879
+    },
+    {
+      "filename": "GOPR0476_frame_000931_rgb_anon.png",
+      "dcp_mean": 0.438531,
+      "contrast_std": 0.225976,
+      "fog_score": 0.380642
+    },
+    {
+      "filename": "GP010476_frame_000010_rgb_anon.png",
+      "dcp_mean": 0.456651,
+      "contrast_std": 0.229954,
+      "fog_score": 0.380297
+    },
+    {
+      "filename": "GP010476_frame_000068_rgb_anon.png",
+      "dcp_mean": 0.447267,
+      "contrast_std": 0.228073,
+      "fog_score": 0.379925
+    },
+    {
+      "filename": "GOPR0476_frame_000948_rgb_anon.png",
+      "dcp_mean": 0.448729,
+      "contrast_std": 0.23039,
+      "fog_score": 0.371965
+    },
+    {
+      "filename": "GOPR0476_frame_001039_rgb_anon.png",
+      "dcp_mean": 0.446927,
+      "contrast_std": 0.231706,
+      "fog_score": 0.365269
+    },
+    {
+      "filename": "GP010476_frame_000063_rgb_anon.png",
+      "dcp_mean": 0.459163,
+      "contrast_std": 0.235726,
+      "fog_score": 0.358929
+    },
+    {
+      "filename": "GP010476_frame_000125_rgb_anon.png",
+      "dcp_mean": 0.452502,
+      "contrast_std": 0.235801,
+      "fog_score": 0.353424
+    },
+    {
+      "filename": "GOPR0476_frame_000781_rgb_anon.png",
+      "dcp_mean": 0.452408,
+      "contrast_std": 0.235945,
+      "fog_score": 0.352774
+    },
+    {
+      "filename": "GP010476_frame_000131_rgb_anon.png",
+      "dcp_mean": 0.461695,
+      "contrast_std": 0.237888,
+      "fog_score": 0.352075
+    },
+    {
+      "filename": "GP010476_frame_000014_rgb_anon.png",
+      "dcp_mean": 0.445484,
+      "contrast_std": 0.235778,
+      "fog_score": 0.348031
+    },
+    {
+      "filename": "GP010476_frame_000194_rgb_anon.png",
+      "dcp_mean": 0.460076,
+      "contrast_std": 0.239384,
+      "fog_score": 0.34475
+    },
+    {
+      "filename": "GP010476_frame_000006_rgb_anon.png",
+      "dcp_mean": 0.461891,
+      "contrast_std": 0.240589,
+      "fog_score": 0.341185
+    },
+    {
+      "filename": "GP010476_frame_000001_rgb_anon.png",
+      "dcp_mean": 0.430657,
+      "contrast_std": 0.236232,
+      "fog_score": 0.33472
+    },
+    {
+      "filename": "GOPR0476_frame_000962_rgb_anon.png",
+      "dcp_mean": 0.460735,
+      "contrast_std": 0.24306,
+      "fog_score": 0.330255
+    },
+    {
+      "filename": "GP010476_frame_000108_rgb_anon.png",
+      "dcp_mean": 0.432814,
+      "contrast_std": 0.238183,
+      "fog_score": 0.328923
+    },
+    {
+      "filename": "GOPR0476_frame_001060_rgb_anon.png",
+      "dcp_mean": 0.445432,
+      "contrast_std": 0.240958,
+      "fog_score": 0.32757
+    },
+    {
+      "filename": "GOPR0476_frame_000769_rgb_anon.png",
+      "dcp_mean": 0.456615,
+      "contrast_std": 0.244422,
+      "fog_score": 0.321798
+    },
+    {
+      "filename": "GOPR0476_frame_000921_rgb_anon.png",
+      "dcp_mean": 0.478957,
+      "contrast_std": 0.249229,
+      "fog_score": 0.317164
+    },
+    {
+      "filename": "GP010476_frame_000102_rgb_anon.png",
+      "dcp_mean": 0.440204,
+      "contrast_std": 0.242865,
+      "fog_score": 0.316298
+    },
+    {
+      "filename": "GOPR0476_frame_001055_rgb_anon.png",
+      "dcp_mean": 0.398586,
+      "contrast_std": 0.235987,
+      "fog_score": 0.310655
+    },
+    {
+      "filename": "GOPR0476_frame_000926_rgb_anon.png",
+      "dcp_mean": 0.425655,
+      "contrast_std": 0.241743,
+      "fog_score": 0.310068
+    },
+    {
+      "filename": "GOPR0476_frame_000940_rgb_anon.png",
+      "dcp_mean": 0.470461,
+      "contrast_std": 0.251738,
+      "fog_score": 0.30109
+    },
+    {
+      "filename": "GOPR0476_frame_000935_rgb_anon.png",
+      "dcp_mean": 0.437349,
+      "contrast_std": 0.246983,
+      "fog_score": 0.298307
+    },
+    {
+      "filename": "GOPR0476_frame_000826_rgb_anon.png",
+      "dcp_mean": 0.410915,
+      "contrast_std": 0.243276,
+      "fog_score": 0.293758
+    },
+    {
+      "filename": "GP010476_frame_000051_rgb_anon.png",
+      "dcp_mean": 0.429839,
+      "contrast_std": 0.248754,
+      "fog_score": 0.286446
+    },
+    {
+      "filename": "GOPR0476_frame_001015_rgb_anon.png",
+      "dcp_mean": 0.469259,
+      "contrast_std": 0.255139,
+      "fog_score": 0.286197
+    },
+    {
+      "filename": "GOPR0476_frame_000840_rgb_anon.png",
+      "dcp_mean": 0.409904,
+      "contrast_std": 0.245398,
+      "fog_score": 0.285338
+    },
+    {
+      "filename": "GOPR0476_frame_000775_rgb_anon.png",
+      "dcp_mean": 0.425683,
+      "contrast_std": 0.248358,
+      "fog_score": 0.28517
+    },
+    {
+      "filename": "GOPR0476_frame_001019_rgb_anon.png",
+      "dcp_mean": 0.43856,
+      "contrast_std": 0.250726,
+      "fog_score": 0.284605
+    },
+    {
+      "filename": "GOPR0476_frame_001024_rgb_anon.png",
+      "dcp_mean": 0.397044,
+      "contrast_std": 0.245879,
+      "fog_score": 0.274693
+    },
+    {
+      "filename": "GOPR0476_frame_000944_rgb_anon.png",
+      "dcp_mean": 0.424764,
+      "contrast_std": 0.251506,
+      "fog_score": 0.272717
+    },
+    {
+      "filename": "GOPR0476_frame_000845_rgb_anon.png",
+      "dcp_mean": 0.399819,
+      "contrast_std": 0.250683,
+      "fog_score": 0.259616
+    },
+    {
+      "filename": "GOPR0476_frame_000879_rgb_anon.png",
+      "dcp_mean": 0.404556,
+      "contrast_std": 0.252107,
+      "fog_score": 0.257593
+    },
+    {
+      "filename": "GP020475_frame_000173_rgb_anon.png",
+      "dcp_mean": 0.442033,
+      "contrast_std": 0.258458,
+      "fog_score": 0.256608
+    },
+    {
+      "filename": "GP010476_frame_000095_rgb_anon.png",
+      "dcp_mean": 0.339099,
+      "contrast_std": 0.238852,
+      "fog_score": 0.255694
+    },
+    {
+      "filename": "GP010476_frame_000120_rgb_anon.png",
+      "dcp_mean": 0.364388,
+      "contrast_std": 0.245013,
+      "fog_score": 0.254896
+    },
+    {
+      "filename": "GP020475_frame_000088_rgb_anon.png",
+      "dcp_mean": 0.383049,
+      "contrast_std": 0.24958,
+      "fog_score": 0.252464
+    },
+    {
+      "filename": "GOPR0476_frame_000899_rgb_anon.png",
+      "dcp_mean": 0.346007,
+      "contrast_std": 0.242041,
+      "fog_score": 0.251137
+    },
+    {
+      "filename": "GP010476_frame_000073_rgb_anon.png",
+      "dcp_mean": 0.456991,
+      "contrast_std": 0.2621,
+      "fog_score": 0.250562
+    },
+    {
+      "filename": "GOPR0476_frame_000850_rgb_anon.png",
+      "dcp_mean": 0.43072,
+      "contrast_std": 0.260195,
+      "fog_score": 0.24342
+    },
+    {
+      "filename": "GP010476_frame_000114_rgb_anon.png",
+      "dcp_mean": 0.354295,
+      "contrast_std": 0.247213,
+      "fog_score": 0.240936
+    },
+    {
+      "filename": "GP020475_frame_000119_rgb_anon.png",
+      "dcp_mean": 0.38667,
+      "contrast_std": 0.254186,
+      "fog_score": 0.23909
+    },
+    {
+      "filename": "GOPR0476_frame_000788_rgb_anon.png",
+      "dcp_mean": 0.396536,
+      "contrast_std": 0.256119,
+      "fog_score": 0.238405
+    },
+    {
+      "filename": "GP010476_frame_000204_rgb_anon.png",
+      "dcp_mean": 0.350744,
+      "contrast_std": 0.247456,
+      "fog_score": 0.237767
+    },
+    {
+      "filename": "GP010476_frame_000022_rgb_anon.png",
+      "dcp_mean": 0.419121,
+      "contrast_std": 0.260222,
+      "fog_score": 0.236764
+    },
+    {
+      "filename": "GP020475_frame_000094_rgb_anon.png",
+      "dcp_mean": 0.404673,
+      "contrast_std": 0.259523,
+      "fog_score": 0.231108
+    },
+    {
+      "filename": "GOPR0476_frame_000859_rgb_anon.png",
+      "dcp_mean": 0.380552,
+      "contrast_std": 0.25556,
+      "fog_score": 0.230677
+    },
+    {
+      "filename": "GOPR0476_frame_001029_rgb_anon.png",
+      "dcp_mean": 0.392652,
+      "contrast_std": 0.257751,
+      "fog_score": 0.230398
+    },
+    {
+      "filename": "GOPR0476_frame_000874_rgb_anon.png",
+      "dcp_mean": 0.449391,
+      "contrast_std": 0.266627,
+      "fog_score": 0.22839
+    },
+    {
+      "filename": "GP020475_frame_000081_rgb_anon.png",
+      "dcp_mean": 0.389733,
+      "contrast_std": 0.258326,
+      "fog_score": 0.226703
+    },
+    {
+      "filename": "GOPR0476_frame_000916_rgb_anon.png",
+      "dcp_mean": 0.38834,
+      "contrast_std": 0.258145,
+      "fog_score": 0.226515
+    },
+    {
+      "filename": "GP010476_frame_000078_rgb_anon.png",
+      "dcp_mean": 0.39421,
+      "contrast_std": 0.259621,
+      "fog_score": 0.224789
+    },
+    {
+      "filename": "GP010476_frame_000147_rgb_anon.png",
+      "dcp_mean": 0.366138,
+      "contrast_std": 0.255189,
+      "fog_score": 0.223145
+    },
+    {
+      "filename": "GP020475_frame_000054_rgb_anon.png",
+      "dcp_mean": 0.383793,
+      "contrast_std": 0.258628,
+      "fog_score": 0.222221
+    },
+    {
+      "filename": "GP010476_frame_000181_rgb_anon.png",
+      "dcp_mean": 0.375859,
+      "contrast_std": 0.257854,
+      "fog_score": 0.220202
+    },
+    {
+      "filename": "GOPR0476_frame_001007_rgb_anon.png",
+      "dcp_mean": 0.305624,
+      "contrast_std": 0.24321,
+      "fog_score": 0.218665
+    },
+    {
+      "filename": "GOPR0476_frame_000854_rgb_anon.png",
+      "dcp_mean": 0.371465,
+      "contrast_std": 0.258678,
+      "fog_score": 0.214921
+    },
+    {
+      "filename": "GOPR0476_frame_000884_rgb_anon.png",
+      "dcp_mean": 0.414854,
+      "contrast_std": 0.267199,
+      "fog_score": 0.20874
+    },
+    {
+      "filename": "GOPR0476_frame_000889_rgb_anon.png",
+      "dcp_mean": 0.370052,
+      "contrast_std": 0.260749,
+      "fog_score": 0.207321
+    },
+    {
+      "filename": "GOPR0476_frame_000834_rgb_anon.png",
+      "dcp_mean": 0.338325,
+      "contrast_std": 0.255372,
+      "fog_score": 0.205644
+    },
+    {
+      "filename": "GP020475_frame_000109_rgb_anon.png",
+      "dcp_mean": 0.433431,
+      "contrast_std": 0.272853,
+      "fog_score": 0.196395
+    },
+    {
+      "filename": "GP010476_frame_000031_rgb_anon.png",
+      "dcp_mean": 0.357347,
+      "contrast_std": 0.26491,
+      "fog_score": 0.187043
+    },
+    {
+      "filename": "GOPR0476_frame_000952_rgb_anon.png",
+      "dcp_mean": 0.342214,
+      "contrast_std": 0.263292,
+      "fog_score": 0.184021
+    },
+    {
+      "filename": "GOPR0476_frame_000869_rgb_anon.png",
+      "dcp_mean": 0.410702,
+      "contrast_std": 0.275057,
+      "fog_score": 0.178086
+    },
+    {
+      "filename": "GOPR0476_frame_000957_rgb_anon.png",
+      "dcp_mean": 0.360804,
+      "contrast_std": 0.269108,
+      "fog_score": 0.175446
+    },
+    {
+      "filename": "GP020475_frame_000100_rgb_anon.png",
+      "dcp_mean": 0.344283,
+      "contrast_std": 0.267905,
+      "fog_score": 0.171079
+    },
+    {
+      "filename": "GOPR0476_frame_000894_rgb_anon.png",
+      "dcp_mean": 0.32586,
+      "contrast_std": 0.265606,
+      "fog_score": 0.168553
+    },
+    {
+      "filename": "GOPR0476_frame_000864_rgb_anon.png",
+      "dcp_mean": 0.290791,
+      "contrast_std": 0.25975,
+      "fog_score": 0.165485
+    },
+    {
+      "filename": "GOPR0476_frame_000904_rgb_anon.png",
+      "dcp_mean": 0.323012,
+      "contrast_std": 0.269874,
+      "fog_score": 0.154881
+    },
+    {
+      "filename": "GOPR0476_frame_001011_rgb_anon.png",
+      "dcp_mean": 0.354583,
+      "contrast_std": 0.276861,
+      "fog_score": 0.148092
+    },
+    {
+      "filename": "GP010476_frame_000161_rgb_anon.png",
+      "dcp_mean": 0.422997,
+      "contrast_std": 0.285051,
+      "fog_score": 0.146003
+    },
+    {
+      "filename": "GP020475_frame_000130_rgb_anon.png",
+      "dcp_mean": 0.382954,
+      "contrast_std": 0.281994,
+      "fog_score": 0.142543
+    },
+    {
+      "filename": "GP020475_frame_000140_rgb_anon.png",
+      "dcp_mean": 0.366646,
+      "contrast_std": 0.281822,
+      "fog_score": 0.137031
+    },
+    {
+      "filename": "GP020475_frame_000061_rgb_anon.png",
+      "dcp_mean": 0.368143,
+      "contrast_std": 0.283062,
+      "fog_score": 0.133551
+    },
+    {
+      "filename": "GP010476_frame_000026_rgb_anon.png",
+      "dcp_mean": 0.298644,
+      "contrast_std": 0.275707,
+      "fog_score": 0.127779
+    },
+    {
+      "filename": "GP020475_frame_000194_rgb_anon.png",
+      "dcp_mean": 0.320037,
+      "contrast_std": 0.283668,
+      "fog_score": 0.114382
+    },
+    {
+      "filename": "GP020475_frame_000184_rgb_anon.png",
+      "dcp_mean": 0.29877,
+      "contrast_std": 0.281531,
+      "fog_score": 0.112433
+    },
+    {
+      "filename": "GP020475_frame_000160_rgb_anon.png",
+      "dcp_mean": 0.330667,
+      "contrast_std": 0.286169,
+      "fog_score": 0.110861
+    },
+    {
+      "filename": "GP010476_frame_000084_rgb_anon.png",
+      "dcp_mean": 0.352512,
+      "contrast_std": 0.290343,
+      "fog_score": 0.105163
+    },
+    {
+      "filename": "GP020475_frame_000135_rgb_anon.png",
+      "dcp_mean": 0.343648,
+      "contrast_std": 0.292285,
+      "fog_score": 0.096613
+    },
+    {
+      "filename": "GP020475_frame_000189_rgb_anon.png",
+      "dcp_mean": 0.362192,
+      "contrast_std": 0.295069,
+      "fog_score": 0.092903
+    },
+    {
+      "filename": "GP020475_frame_000125_rgb_anon.png",
+      "dcp_mean": 0.328256,
+      "contrast_std": 0.292414,
+      "fog_score": 0.091911
+    },
+    {
+      "filename": "GOPR0476_frame_000910_rgb_anon.png",
+      "dcp_mean": 0.39601,
+      "contrast_std": 0.302032,
+      "fog_score": 0.077172
+    },
+    {
+      "filename": "GP020475_frame_000209_rgb_anon.png",
+      "dcp_mean": 0.324353,
+      "contrast_std": 0.303484,
+      "fog_score": 0.059039
+    },
+    {
+      "filename": "GP020475_frame_000179_rgb_anon.png",
+      "dcp_mean": 0.270803,
+      "contrast_std": 0.304127,
+      "fog_score": 0.047752
+    },
+    {
+      "filename": "GP020475_frame_000204_rgb_anon.png",
+      "dcp_mean": 0.326151,
+      "contrast_std": 0.314718,
+      "fog_score": 0.026941
+    },
+    {
+      "filename": "GP020475_frame_000199_rgb_anon.png",
+      "dcp_mean": 0.335946,
+      "contrast_std": 0.316645,
+      "fog_score": 0.022019
+    },
+    {
+      "filename": "GP020475_frame_000229_rgb_anon.png",
+      "dcp_mean": 0.357712,
+      "contrast_std": 0.324051,
+      "fog_score": 0.0
+    }
+  ]
+}

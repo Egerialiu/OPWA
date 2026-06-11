@@ -1,0 +1,85 @@
+{
+  "dataset": "acdc_fog_val",
+  "condition_variable": "DCP",
+  "q_hat": 0.513809,
+  "target_coverage": 0.9,
+  "alpha": 0.1,
+  "overall_coverage": 0.911878,
+  "overall_mean_score": 0.10511,
+  "bin_strategy": "fixed",
+  "bin_edges": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    1.0
+  ],
+  "bins": {
+    "bin0_dcp0.00_0.10_clear": {
+      "bin_id": 0,
+      "dcp_range": [
+        0.0,
+        0.1
+      ],
+      "pixel_count": 17365561,
+      "pixel_ratio": 0.08853,
+      "coverage_rate": 0.860834,
+      "gap": 0.039166,
+      "mean_score": 0.165234,
+      "empty_set_rate": 0.040043
+    },
+    "bin1_dcp0.10_0.20": {
+      "bin_id": 1,
+      "dcp_range": [
+        0.1,
+        0.2
+      ],
+      "pixel_count": 35137440,
+      "pixel_ratio": 0.179132,
+      "coverage_rate": 0.840352,
+      "gap": 0.059648,
+      "mean_score": 0.18211,
+      "empty_set_rate": 0.037798
+    },
+    "bin2_dcp0.20_0.30": {
+      "bin_id": 2,
+      "dcp_range": [
+        0.2,
+        0.3
+      ],
+      "pixel_count": 48592013,
+      "pixel_ratio": 0.247724,
+      "coverage_rate": 0.901212,
+      "gap": 0.0,
+      "mean_score": 0.112831,
+      "empty_set_rate": 0.014082
+    },
+    "bin3_dcp0.30_0.50": {
+      "bin_id": 3,
+      "dcp_range": [
+        0.3,
+        0.5
+      ],
+      "pixel_count": 28496169,
+      "pixel_ratio": 0.145274,
+      "coverage_rate": 0.916436,
+      "gap": 0.0,
+      "mean_score": 0.10281,
+      "empty_set_rate": 0.010514
+    },
+    "bin4_dcp0.50_1.00_fog": {
+      "bin_id": 4,
+      "dcp_range": [
+        0.5,
+        1.0
+      ],
+      "pixel_count": 66562819,
+      "pixel_ratio": 0.33934,
+      "coverage_rate": 0.968788,
+      "gap": 0.0,
+      "mean_score": 0.044126,
+      "empty_set_rate": 0.001509
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "total_valid_pixels": 449381364,
+  "per_bin": {
+    "bin0_t0.00_0.20": {
+      "pixel_count": 395790037,
+      "ratio_of_total": 0.880744,
+      "sufficient_for_pscp": true
+    },
+    "bin1_t0.20_0.40": {
+      "pixel_count": 52534319,
+      "ratio_of_total": 0.116904,
+      "sufficient_for_pscp": true
+    },
+    "bin2_t0.40_0.60": {
+      "pixel_count": 1017470,
+      "ratio_of_total": 0.002264,
+      "sufficient_for_pscp": true
+    },
+    "bin3_t0.60_0.80": {
+      "pixel_count": 39538,
+      "ratio_of_total": 8.8e-05,
+      "sufficient_for_pscp": true
+    },
+    "bin4_t0.80_1.00": {
+      "pixel_count": 0,
+      "ratio_of_total": 0.0,
+      "sufficient_for_pscp": false
+    }
+  },
+  "bin0_ratio": 0.880744,
+  "pscp_feasible": false
+}
